@@ -306,9 +306,11 @@ header .Sign button:hover{
 	padding: 10px;
 	line-height: 1.6em;
 	font-size: 16px;
+	margin: 20px;
 }
 
 #imagespro h2{
+	margin: 15px;
 	font-weight: 500;
 	margin-bottom: 5px;
 	text-decoration: underline;
@@ -396,3 +398,97 @@ footer{
 	height: 50px;
 	margin: 0px;
 }
+
+@media all and (max-width: 700px){
+	body{
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+		padding: 0px;
+		margin: 0px;
+		transition: 0.25s;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+		height: 35%;
+		justify-content: space-evenly;
+		margin: 0px;
+		padding: 0px;
+	}
+	header .nav{
+		display: flex;
+		flex-direction: row;
+		float: ;
+		margin-bottom: 0px;
+	}
+
+	header a:hover{
+		text-decoration: none;
+		border: 0;
+		color:#488AC7 ;
+	}
+	header .logo{
+		margin-top: 20px;
+		margin-left: 35px;
+		margin-bottom: 0px;
+		position: relative;
+		top: 30px;
+	}
+	header .Sign{
+		margin-top: 0px;
+		display: flex;
+		flex-direction: column;
+		width: 20%;
+		padding: 2px;
+
+	}
+	header .Sign button{
+		margin: 5px;
+	}
+	#Welcome{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	#Welcome .note{
+		position: relative;
+		top: 200px;
+	}
+	#About{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin: 20px;
+		grid-auto-rows: 30%;
+	}
+
+	#About .image1{
+		width: 100%;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	#About .about: hover{
+		width: 100%;
+		margin-left:0px;
+	}
+
+	#imagespro{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: 30%;
+		font-size: 16px;
+	}
+	hr{
+		display: flex;
+		flex-direction:row;
+	}
+
+	#Contact{
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
