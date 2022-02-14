@@ -19,6 +19,7 @@ body{
 	font-family: verdana;
 	font-size: 16px;
 /*	margin: 20px;*/
+transition: 0.25s;
 }
 
 header{
@@ -103,6 +104,7 @@ header .Sign button:hover{
 }
 
 .outer_div{
+
 	box-sizing: border-box;
 	background-color: black;
 	opacity: 0.8;
@@ -146,6 +148,7 @@ header .Sign button:hover{
 	transition: 0.25s;
 	cursor: pointer;
 	height: 20%;
+	margin-top: 30px;
 }
 #Welcome .note button:hover{
 	width: 35%;
@@ -200,6 +203,7 @@ header .Sign button:hover{
 }
 
 #About .image1 img{
+	margin-right: 30px;
 	margin: 20px;
 	width: 100%;
 	height: 300px;
@@ -230,6 +234,7 @@ header .Sign button:hover{
 	font-size: 20px;
 	font-weight: 500;
 	width: 100%;
+	height: 100%;
 	border: 1px solid lightgray;
 	border-radius: 20px;
 	background: #f4f4f4;
@@ -453,7 +458,12 @@ footer{
 	}
 	#Welcome .note{
 		position: relative;
-		top: 200px;
+		top: 250px;
+	}
+
+	#Welcome .note button{
+		transition: 0.25s;
+		margin-top: 0px;
 	}
 	#About{
 		display: grid;

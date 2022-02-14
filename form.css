@@ -54,7 +54,7 @@ body{
 	text-align: center;
 	border: 2px solid #3498db;
 	padding: 14px 40px;
-	/*width: 100%;*/
+	width:40%;
 	outline: none;
 	color: white;
 	border-radius: 24px;
@@ -76,4 +76,75 @@ body{
 
 .values p a:hover{
 	color: #2ecc71;
+}
+
+@media all and (max-width: 700px){
+	body{
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+		padding: 0px;
+		margin: 0px;
+		transition: 0.25s;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+		height:15%;
+		justify-content: space-evenly;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	header .nav{
+		display: flex;
+		flex-direction: row;
+		margin-top: 0px;
+		position: relative;
+		top: 0px;
+	}
+	header .nav a{
+		margin: 0px;
+		padding: 5px;
+
+	}
+	header .logo{
+		margin-top: 0px;
+		position: relative;
+		top: 10px;
+		font-size: 20px;
+		color: #333;
+		float: right;
+	}
+	header .logo a{
+		color: #333;
+	}
+
+	.values{
+		transition: 0.25s;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		top: 350px;
+		width: 60%;
+		height: 70%;
+	}
+
+	.values input[type="text"], .values input[type="password"]{
+		width: 50%;
+	}
+
+	.values input[type="submit"]{
+		width: 40%;
+		text-align: center;
+	}
+
+	.values p{
+		transition: 0.25s;
+		display: flex;
+		flex-direction: column;
+	}
+	.values input[type="text"]:focus, .values input[type="password"]:focus{
+		width: 60%;
+	}
 }
