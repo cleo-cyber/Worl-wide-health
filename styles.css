@@ -11,7 +11,7 @@ header a:hover{
 }
 
 body{
-	background: white;
+	background: #f4f4f4;
 	padding: 0;
 	margin: 0px;
 	line-height: 1.5em;
@@ -19,7 +19,7 @@ body{
 	font-family: verdana;
 	font-size: 16px;
 /*	margin: 20px;*/
-transition: 0.25s;
+	transition: 0.25s;
 }
 
 header{
@@ -100,6 +100,7 @@ header .Sign button:hover{
 	background-color: #f4f4f4;
 	color: white;
 	grid-gap:0 ;
+	text-align: justify;
 
 }
 
@@ -157,7 +158,7 @@ header .Sign button:hover{
 
 #Welcome .note h3, #Welcome .note p{
 
-	text-align: center;
+	text-align: justify;
 	width: 100%;
 	margin-left: 95px;
 	display: grid;
@@ -172,6 +173,7 @@ header .Sign button:hover{
 	font-size: 25px;
 	padding: ;
 	line-height: 1.0em;
+	text-align: justify;
 
 }
 
@@ -296,7 +298,7 @@ header .Sign button:hover{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin-left: 20px;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-right: 20px;
 	background: #f4f4f4;
 	border: none;
@@ -304,8 +306,10 @@ header .Sign button:hover{
 }
 #imagespro img{
 	margin: 50px;
+
 }
 #imagespro  p{
+	text-align: justify;
 	color: #333;
 	font-weight: 500;
 	padding: 10px;
@@ -323,26 +327,52 @@ header .Sign button:hover{
 
 #imagespro .im1:hover{
 	/*width: 90%;*/
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	transition: 0.25;
 }
 #imagespro .im2:hover{
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	transition: 0.25;
 }
 #imagespro .im3:hover{
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	transition: 0.25;
 }
+#imagespro .im1{
+	background: white;
+	margin: 20px;
+	height: auto;	
+}
+#imagespro .im2{
+	background: white;
+	margin: 20px;
+	height: auto;
+}
+#imagespro .im3{
+	background: white;
+	margin: 20px;
+	height: auto;
+}
+#imagespro .im3:hover{
+	background:#FAFAFA;
+
+}
+#imagespro .im1:hover{
+	background: #FAFAFA;
+}
+#imagespro .im2:hover{
+	background: #FAFAFA;
+}
 #Contact{
+	opacity: 0.9;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 2fr 1fr;
 	text-align: center;
 	padding: 20px;
-	background: #488AC7;
+	background: #333);
 	font-size: 16px;
-	color: #f4f4f4;
+	color: #333;
 	font-weight: 500;
 	margin: 0;
 }
@@ -365,6 +395,7 @@ header .Sign button:hover{
 	outline: none;
 	border: 2px solid #333;
 	text-align: center;
+	text-align: justify;
 }
 #Contact textarea{
 	margin-top: 20px;
@@ -395,15 +426,134 @@ header .Sign button:hover{
 }
 
 #Contact h2{
+	color: #000;
+	font-weight: 900;
+	font-size: 30px;
+
+}
+
+
+
+#imagespro button{
+	transition: 0.25s;
+	border: none;
+	width: 140px;
+	height: 30px;
+	background: #38ACEC;
+	border-radius: 20px;
+	color: white;
+	margin-top: 0px;
+	align-content: center;
+	margin-left: 50px;
+}
+#imagespro button:hover{
+	transition: 0.25s;
+	background:#2ecc71;
+}
+
+/*#about_us{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+#about_us .docs{
+grid-column: 2/-1;
+
+}
+
+#about_us .content{
+	grid-column: 2/-1;
+	grid-row: 1/-1;
+	align-self: center;
+	margin: 20px;
+	background: #fff;
+	border-radius: 20px;
+}
+#about_us .content h2{
 	color: #333;
+	font-size: 25px;
+}
+.docs, .content{
+	grid-row: 1/2;
+}
+*/
+.container{
+
+	background: url("doctor.jpg") no-repeat;
+	background-size: 55%;
+	background-color: #fdfdfd;
+	overflow: hidden;
+	padding: 50px;
+}
+
+.innercont{
+	width: 55%;
+	float: right;
+	background-color: #fdfdfd;
+	padding: 20px;
+}
+
+.innercont h2{
+	margin-bottom: 30px;
+	font-size: 30px;
+	flex-weight: 900;
+}
+
+.text{
+	font-size: 14px;
+	color: #545454;
+	line-height: 25px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+.skills{
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 14px;
 }
 
 footer{
 	background: #000;
-	height: 50px;
-	margin: 0px;
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	color: #fff;
+	/*text-align: center;*/
+	opacity: 0.8;
 }
 
+footer li{
+	list-style: none;
+	margin: 20px;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+footer hr{
+	width: 100%;
+	color: #38ACEC;
+}
+footer h2{
+	margin-left: 30px;
+	color: #f4f4f4;
+	font-weight: 900;
+	font-size: 15px;
+	border-bottom: 2px darkgray dotted;
+	width: 50%;
+}
+footer div{
+	margin: 15px;
+}
+footer li a{
+	text-decoration: none;
+	border: none;
+	/*border-bottom: 2px  darkgray dotted;*/
+
+
+}
+footer li a:hover{
+	color: #488AC7;
+}
 @media all and (max-width: 700px){
 	body{
 		display: flex;
@@ -487,7 +637,7 @@ footer{
 	#imagespro{
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-auto-rows: 30%;
+		grid-auto-rows: 35%;
 		font-size: 16px;
 	}
 	hr{
@@ -499,6 +649,29 @@ footer{
 		display: flex;
 		flex-direction: column;
 	}
+	#Us{
+		transition: 0.25s;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-top: 100px;
 
+	}
+
+	#Us .container{
+		padding: 30px;
+	}
+
+	#Us .skills{
+		transition: 0.25s;
+		display: flex;
+		/*flex-direction: column;*/
+		justify-content: space-between;
+		/*padding: 5px;*/
+
+	}
+	#Us .skills span{
+		margin: 7px;
+	}
 }
 
