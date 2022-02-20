@@ -48,10 +48,16 @@ header .logo{
 }
 
 header .logo a{
-	color: #fff;
+	color: #333;
 	text-decoration: none;
 	transition: 0.25s;
 	
+}
+
+header .logo a:hover{
+	text-decoration: none;
+	/*border: none;*/
+
 }
 
 header .nav{
@@ -377,7 +383,7 @@ header .Sign button:hover{
 	background: white;
 	margin-top: 20px;
 	margin-bottom: 20px;
-
+	margin-right: 10px;
 	height: auto;
 }
 #imagespro .im3:hover{
@@ -390,6 +396,13 @@ header .Sign button:hover{
 #imagespro .im2:hover{
 	background: #FAFAFA;
 }
+/*#imagespro .im1 h2{
+	background: url("beth.jpg");
+	height: 100px;
+	background-size: cover;
+	text-align: center;
+	margin-top: 30px;
+}*/
 #Contact{
 	opacity: 0.9;
 	display: grid;
@@ -463,10 +476,10 @@ header .Sign button:hover{
 
 #imagespro button{
 	transition: 0.25s;
-	border: none;
+	border: 2px solid #38ACEC;
 	width: 90%;
 	height: 30px;
-	background: #38ACEC;
+	background: #fff;
 	border-radius: 20px;
 	color: white;
 	margin-top: 0px;
@@ -477,12 +490,16 @@ header .Sign button:hover{
 #imagespro button a{
 	text-align: center;
 	padding: 5px;
+	color: #38ACEC;
 }
 #imagespro button:hover{
 	transition: 0.25s;
-	background:#2ecc71;
+	background:#38ACEC;
+	color: white;
 }
-
+#imagespro button a:hover{
+	color: white;
+}
 /*#about_us{
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -514,7 +531,7 @@ grid-column: 2/-1;
 	background-size: 55%;
 	background-color: #fdfdfd;
 	overflow: hidden;
-	padding-right: 50px;
+	padding-right: 30px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	padding-left: 50px;
@@ -529,7 +546,7 @@ grid-column: 2/-1;
 	background-color: #fdfdfd;
 	padding: 20px;
 	box-shadow: 0 0 10px grey;
-	border-radius: 20px;
+	/*border-radius: 20px;*/
 }
 
 .innercont h2{
@@ -547,7 +564,9 @@ grid-column: 2/-1;
 }
 .skills{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	padding: 0px;
+	margin: 0px;
 	font-weight: 700;
 	font-size: 14px;
 }
