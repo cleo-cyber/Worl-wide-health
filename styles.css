@@ -20,6 +20,7 @@ body{
 	font-size: 16px;
 /*	margin: 20px;*/
 	transition: 0.25s;
+
 }
 
 header{
@@ -38,6 +39,7 @@ header{
 	top: 0;
 	z-index: 2;
 	box-shadow: 0px 0px 20px grey;
+	margin: 0 auto;
 
 }
 
@@ -145,8 +147,9 @@ header .Sign button:hover{
 #Welcome .note button{
 	border: 0;
 	width: 40%;
-	background: #38ACEC;
-	border-color:#2ecc71;
+	background:white;
+	color: #38ACEC;
+	border-color:#38ACEC;
 	border-radius: 20px;
 	padding: 5px;
 	margin-left: 0px;
@@ -165,6 +168,7 @@ header .Sign button:hover{
 #Welcome .note button a{
 	text-align: center;
 	padding: 5px;
+	border-color: #38acec;
 }
 #Welcome .note h3, #Welcome .note p{
 
@@ -642,15 +646,19 @@ footer li a:hover{
 
 #services{
 	margin-top: 20px;
+	/*margin-bottom: 50px;*/
 	margin-bottom: 20px;
 	margin-right: 20px;
 	margin-left: 20px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	background-color: #f4f4f4;
+	/*grid-gap: 20px;*/
 	justify-content: space-around;
 	align-content: center;
 	/*box-shadow: 0 0 5px;*/
 	background: #fff;
+	/*height: 300px;*/
 
 }
 
@@ -663,14 +671,19 @@ footer li a:hover{
 }
 
 #services button{
+
 	width: 150px;
 	height: 80px;
 	border: 1px solid #333;
 	border-radius: 4px;
 	/*border-color: #38acec;*/
-	background-color: #fff;
+	background-color: #f4f4f4;
 	box-shadow: 5px 5px #888888;
 	transition: all .2s ease-in-out;
+	margin-left: 50px;
+	margin-right: 50px;
+	/*padding: 0,50px ,0,50px;*/
+	margin-top: 30px;
 	
 }
 
@@ -687,7 +700,9 @@ footer li a:hover{
 	background: #228999;
 	color: #fff;
 }
-@media screen and (max-width: 700px){
+
+
+@media screen and (max-width: 760px){
 	body{
 		display: flex;
 		flex-direction: column;
@@ -695,6 +710,7 @@ footer li a:hover{
 		padding: 0px;
 		margin: 0px;
 		transition: 0.25s;
+		overflow-x: hidden;
 	}
 	header{
 		display: flex;
@@ -704,6 +720,8 @@ footer li a:hover{
 		margin: 0px;
 		padding: 0px;
 		position: inherit;
+		overflow: hidden;
+		/*width: 100%;*/
 	}
 	header .nav{
 		display: flex;
@@ -739,11 +757,14 @@ footer li a:hover{
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
+		width: 100%;
+		/*height: 90%;*/
 	}
 	#Welcome .note{
 		position: relative;
 		/*top: 250px;*/
 	}
+
 
 	#Welcome .note button{
 		transition: 0.25s;
@@ -773,6 +794,8 @@ footer li a:hover{
 		grid-template-columns: 1fr;
 		grid-auto-rows: 35%;
 		font-size: 16px;
+		width:0 auto;
+		margin: 0px;
 	}
 	hr{
 		display: flex;
@@ -783,10 +806,31 @@ footer li a:hover{
 		display: flex;
 		flex-direction: column;
 	}
+	#serv{
+		display: block;
+		align-content: center;
+	}
+	#services{
+		margin: 0pxpx;
+		display: flex;
+		flex-direction: column;
+		/*width: 50%;*/
+		width: 100%;
+
+	}
+	#services button{
+		width: 15%;
+		margin-right: 10px;
+		margin-left: 10px;
+		padding: 2px;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 	#Us{
 		transition: 0.25s;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		width: 100%;
 		margin-top: 100px;
 
@@ -804,8 +848,11 @@ footer li a:hover{
 		/*padding: 5px;*/
 
 	}
-	#Us .skills span{
-		margin: 7px;
+	#Us .skills a button{
+		margin: 10px;
+		width: 100%;
+		text-align: center;
+
 	}
 
 
