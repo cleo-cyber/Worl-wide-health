@@ -1,0 +1,73 @@
+body{
+	background: #f4f4f4;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+header{
+	transition: 0.25s;
+	align-content: center;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #38ACEC;
+
+}
+
+header .nav{
+	margin-top: 20px;
+	/*margin-bottom: 20px;*/
+}
+
+header .nav a{
+	padding: 0 20px 0 20px;
+	text-decoration: none;
+	/*text-transform: uppercase;*/
+	font-weight: 500;
+	color: #FFF;
+}
+
+header .logo{
+	margin-top: 20px;
+	/*margin-bottom: 20px;*/
+	margin-left: 20px;
+}
+header .logo a{
+	color: white;
+	text-decoration: none;
+
+}
+header .Sign{
+	margin-top: 20px;
+	/*margin-bottom: 20px;*/
+	margin-right: 20px;
+}
+
+header .Sign a{
+	color: #333;
+	text-decoration: none;
+}
+header .Sign a:hover{
+	background-color: wheat;
+}
+header .Sign button{
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 30px;
+}
+
+header .Sign button:hover{
+	transition: 0.25s;
+	background-color: lightgray;
+	opacity: ;
+}
+#Hero_section{
+	background: url("abt3.jpg") no-repeat;
+	height: 800px;
+	background-size: contain;
+
+}
