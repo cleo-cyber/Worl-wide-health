@@ -89,6 +89,8 @@ header .Sign button a{
 	border: none;
 	transition: ease 0.3s;
 	text-decoration: none;
+	padding: 10px;
+	/*margin: 3px;*/
 }
 header .Sign button:hover{
 	background: #6495ED;
@@ -672,7 +674,7 @@ footer li a:hover{
 
 #services button{
 
-	width: 150px;
+	width: 10%;
 	height: 80px;
 	border: 1px solid #333;
 	border-radius: 4px;
