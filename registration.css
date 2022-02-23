@@ -1,0 +1,22 @@
+body{
+	background: #333;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	/*width: 50%;*/
+	text-align: justify;
+	align-items: center;
+	position: relative;
+	top: 150px;
+}
+
+form h2{
+	color: #fff;
+	font-size: 20px;
+	flex-wrap: 900;
+}
+
+form label{
+	color: #fff;
+}

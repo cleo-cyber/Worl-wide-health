@@ -6,10 +6,7 @@ body{
 	font-size: 16px;
 	line-height: 1.5em;
 }
-header{
-	height: 50px;
-	background: #38acec;
-	margin-bottom: 0px;
+
 }
 #Hero_section{
 	background: url("abt3.jpg") no-repeat;

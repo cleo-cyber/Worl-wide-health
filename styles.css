@@ -4,7 +4,9 @@ a{
 	transition: ease 0.3s;
 	
 }
-
+html{
+	scroll-behavior: smooth;
+}
 header a:hover{
 	border-bottom: 1px solid #fff;
 	transition: ease 0.3s;
@@ -40,7 +42,7 @@ header{
 	z-index: 2;
 	box-shadow: 0px 0px 20px grey;
 	margin: 0 auto;
-
+	animation: nav-load 300ms;
 }
 
 header .logo{
@@ -102,14 +104,14 @@ header .Sign button:hover{
 #Welcome{
 
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	height: auto;
-	background:url("sarah.jpg");
-	background-size: contain;
+	/*grid-template-columns: 1fr 1fr;*/
+	height: 790px;
+	background:url("rename.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #f4f4f4;
 	color: white;
-	grid-gap:0 ;
+	/*grid-gap:0 ;*/
 	text-align: justify;
 
 }
@@ -127,271 +129,205 @@ header .Sign button:hover{
 	align-items: center;*/
 }
 
-#Welcome .pic img{
+/*#Welcome .pic img{
 	display: flex;
 	flex-direction: row;
 	height: 500px;
 	width: 100%;
-}
+}*/
 
 #Welcome .note{
+margin-top: 300px;
+text-align: center;
 
-	align-content: center;
-	text-align: center;
-	position: relative;
-	top: 100px;
-	/*display: grid;
-	grid-template-rows: 100px;
-	grid-auto-rows: 40%;
-	position: relative;
-	top: 100px;*/
 }
 #Welcome .note button{
-	border: 0;
-	width: 40%;
-	background:white;
-	color: #38ACEC;
-	border-color:#38ACEC;
+	transition:all .2s ease-in-out ;
+	margin-top: 10px;
+	height: 40px;
+	width: 19%;
+	border: 2px solid #333;
 	border-radius: 20px;
-	padding: 5px;
-	margin-left: 0px;
-	outline: none;
-	/*text-align: center;*/
-	transition: 0.25s;
-	cursor: pointer;
-	height: 20%;
-	margin-top: 30px;
-	/*text-align: justify;*/
+	color: #333;
+	font-size: 14px;
+	text-transform: uppercase;
+	/*box-shadow: 2px 2px #333;*/
+	animation: ;
+
 }
+
 #Welcome .note button:hover{
-	width: 39%;
-	background: #2ecc71;
+	transform: scale(1.1);
 }
 #Welcome .note button a{
-	text-align: center;
-	padding: 5px;
-	border-color: #38acec;
+	font-size: 20px;
 }
 #Welcome .note h3, #Welcome .note p{
 
-	text-align: justify;
-	width: 100%;
-	margin-left: 95px;
-	display: grid;
-	grid-auto-columns: 70%;
-	/*grid-template-columns: 1fr;*/
-	/*color: #333;*/
+	/*margin-left: 5%;*/
+	/*width: 50%;*/
+	padding: 0;
+	align-content: center;
+
+	/*margin-top: 20%;*/
 
 }
 
 #Welcome .note h3{
-	/*font-weight: 500;*/
-	font-size: 25px;
 	padding: ;
-	line-height: 1.0em;
-	text-align: justify;
+	line-height: 0.9em;
+	/*text-align: justify;*/
+	text-transform: uppercase;
+	font-size: 50px;
+	width: 100%;
+	animation: note-load 400ms;
 
 }
 
 #Welcome .note p{
+	/*margin-top: 20px;*/
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 27px;
 	line-height: 1.3em;
 	color: white;
 
 }
-#Welcome .pic{
-	margin-right: 0px;
-	/*margin-left: 20px;*/
-}
-#About{
-	margin: 20px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 10px;
-	grid-auto-columns: 30%;
-	/*margin-right: 20px;*/
-	/*margin-left: 20px;*/
-	margin-bottom: 3px;
-	background: #f4f4f4;
-	border: none;
-	/*border-radius: 20px;*/
-	/*color: #f4f4f/*4*/;*/
-
-}
-
-#About .image1 img{
-	margin-right: 30px;
-	margin: 20px;
-	width: 100%;
-	height: 300px;
-}
-#About .what{
-	font-size: 20px;
-	font-weight: 500;
-	width: 80%;
-	border: none;
-	border-radius: 20px;
-	background: #f4f4f4;
-	/*color: #f4f4f4;*/
-	transition: 0.25s;
-	height: auto;
-	text-align: center;
-
-}
-#About .what:hover{
-	/*width: 90%;*/
-	transition: 0.25s;
-	margin: 5px;
-}
-
-#About .about{
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	font-size: 20px;
-	font-weight: 500;
-	width: 100%;
-	height: 100%;
-	border: 1px solid lightgray;
-	border-radius: 20px;
-	background: #f4f4f4;
-	/*color: #f4f4f4;*/
-	transition: 0.25s;
-	text-align: center;
-}
-#About .about:hover{
-	transition: 0.25s;
-	margin-left: 3px;
-}
-
-#About .about button{
-	transition: 0.25s;
-	border: none;
-	width: 140px;
-	height: 30px;
-	background: #38ACEC;
-	border-radius: 20px;
-	color: white;
-
-}
-#About .what button{
-	transition: 0.25s;
-	border: none;
-	width: 140px;
-	height: 30px;
-	background: #38ACEC;
-	border-radius: 20px;
-	color: white;
-}
-#About .what a{
-	text-decoration: none;
-	align-content: center;
-	text-align: center;
-
-}
-#About .what a button:hover{
-	background:#2ecc71 ;
-	transition: 0.25s;
-}
-#About .about a button:hover{
-	transition: 0.25s;
-	background:#2ecc71 ;
-}
-
-#About  h2{
-	color: #659DBD;
-	font-size: 25px;
-	text-align: center;
-
-}
-#About p{
-	color: #333;
-	font-size: 16px;
-}
 
 #imagespro{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin-left: 20px;
-	margin-top: 10px;
-	margin-right: 20px;
-	background: #f4f4f4;
-	border: none;
-	border-radius: 20px;
+display: flex;
+flex-direction: row;
+margin-top: -70px;
+margin-left: 40px;
+margin-right: 40px;
+justify-content: space-around;
+align-items: justify;
+margin-bottom: 40px;
 
-	/*box-shadow: 0px 0px 10px grey;*/
 }
 #imagespro button{
-	margin-bottom: 20px;
+	height: 40px;
+	width: 80%;
+	margin-right: 20px;
+	margin-left: 20px;
+	align-content: center;
+	border: 2px solid #38acec;
 	color: #38acec;
+	background-color: #fff;
+	border-radius: 20px;
 
 }
 #imagespro img{
- width: 100%;
+width: 100%;
 
 }
 #imagespro  p{
-	text-align: justify;
-	color: #333;
-	font-weight: 500;
-	padding-left: 10px;
-	/*padding-right: 10px;*/
-	line-height: 1.7em;
-	font-size: 14px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+/*margin:0 auto;*/
+text-align: justify;
+width:0 auto;
+height: 0 auto;
+margin-top: 20px;
+margin-bottom: 20px;
+color: #333;
+font-size: 16px;
+margin-left: 20px;
+margin-right: 20px;
 }
 
 #imagespro h2{
-	margin-left: 20px;
-	margin-top: 20px;
-	font-size: 15px;
-	font-weight: 900;
-	/*margin-bottom: 0px;*/
-	text-decoration: underline;
+margin-bottom: 20px;
+margin-left: 20px;
+text-decoration: underline;
+font-weight: 900;
+font-size: 16px;
+color: #000;
+
 }
 
-#imagespro .im1:hover{
-	/*width: 90%;*/
-	/*margin-top: 10px;*/
-	transition: 0.25;
+#imagespro .im1 .bgcontainer1{
+	box-sizing: border-box;
+	background: url("beth.jpg");
+	margin-top: 0px;
+	height: 200px;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	color: #fff;
+	border: 2px solid #38acec;
+
 }
-#imagespro .im2:hover{
-	/*margin-top: 10px;*/
-	transition: 0.25;
-}
-#imagespro .im3:hover{
-	/*margin-top: 10px;*/
-	transition: 0.25;
-}
+
 #imagespro .im1{
-	border-radius: 20px;
-	box-shadow: 0px 0px 10px grey;
-	background: white;
-	margin-left: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	/*margin-right: 10px;*/
-	height: auto;	
+	background-color: #fff;
+	z-index: 1;
+	margin: 20px;
+	box-shadow: 0px 0px 10px white;
+	height: 430px;
+	
+	
+}
+#imagespro .im1 h2{
+	color: #fff;
+	margin-top: 0px;
+	text-align: center;
+	position: relative;
+	top: 40%;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 25px;
+}
+#imagespro .im2 h2{
+	color: #fff;
+	margin-top: 0px;
+	text-align: center;
+	position: relative;
+	top: 40%;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 25px;
+}
+#imagespro .im2 .bgcontainer2{
+	box-sizing: border-box;
+	background: url("arnold.jpg");
+	margin-top: 0px;
+	height: 200px;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	color: #fff;
+	border: 2px solid #38acec;
 }
 #imagespro .im2{
-	border-radius: 20px;
-	box-shadow: 0px 0px 10px grey;
-	background: white;
+background-color: #fff;
+	z-index: 1;
 	margin: 20px;
-	height: auto;
+	box-shadow: 0px 0px 10px grey;
 }
 #imagespro .im3{
-	border-radius: 20px;
-	box-shadow: 0px 0px 10px grey;
-	background: white;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-right: 10px;
-	height: auto;
-	/*font-size: 10px;*/
+background-color: #fff;
+	z-index: 1;
+	margin: 20px;
+	box-shadow:0px 0px 10px grey;
+}
+#imagespro .im3 h2{
+	color: #fff;
+	margin-top: 0px;
+	text-align: center;
+	position: relative;
+	top: 40%;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 25px;
+}
+#imagespro .im3 .bgcontainer3{
+	box-sizing: border-box;
+	background: url("dance.jpg");
+	margin-top: 0px;
+	height: 200px;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	color: #fff;
+	border: 2px solid #38acec;
 }
 #imagespro .im3:hover{
 	background:#FAFAFA;
@@ -403,13 +339,13 @@ header .Sign button:hover{
 #imagespro .im2:hover{
 	background: #FAFAFA;
 }
-/*#imagespro .im1 h2{
-	background: url("beth.jpg");
-	height: 100px;
-	background-size: cover;
-	text-align: center;
-	margin-top: 30px;
-}*/
+#imagespro button:hover{
+	transition: 0.25s;
+	transform: scale(0.9);
+	color: #fff;
+	background-color: #38acec;
+}
+
 #Contact{
 	opacity: 0.9;
 	display: grid;
@@ -421,8 +357,7 @@ header .Sign button:hover{
 	font-size: 16px;
 	color: #333;
 	font-weight: 500;
-	margin: 0;
-
+	margin-top: 20px;
 }
 
 #Contact .Intouch{
@@ -480,63 +415,10 @@ header .Sign button:hover{
 	color: #000;
 }
 
-
-
-#imagespro button{
-	transition: 0.25s;
-	border: 2px solid #38ACEC;
-	width: 90%;
-	height: 30px;
-	background: #fff;
-	border-radius: 20px;
-	color: #38acec;
-	margin-top: 0px;
-	align-content: center;
-	margin-left: 20px;
-	text-align: center;
-}
-#imagespro button a{
-	text-align: center;
-	padding: 5px;
-	color: #38ACEC;
-}
-#imagespro button:hover{
-	transition: 0.25s;
-	background:#38ACEC;
-	color: white;
-}
-#imagespro button a:hover{
-	color: white;
-}
-/*#about_us{
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-}
-#about_us .docs{
-grid-column: 2/-1;
-
-}
-
-#about_us .content{
-	grid-column: 2/-1;
-	grid-row: 1/-1;
-	align-self: center;
-	margin: 20px;
-	background: #fff;
-	border-radius: 20px;
-}
-#about_us .content h2{
-	color: #333;
-	font-size: 25px;
-}
-.docs, .content{
-	grid-row: 1/2;
-}
-*/
 .container{
 
 	background: url("doctor.jpg") no-repeat;
-	
+	/*height: 300px;*/
 	background-size: 55%;
 	background-color: #fdfdfd;
 	overflow: hidden;
@@ -548,12 +430,15 @@ grid-column: 2/-1;
 	
 
 }
-
+#Us{
+	height: 300px;
+	background: #fff;
+}
 .innercont{
 	width: 60%;
 	float: right;
 	background-color: #fdfdfd;
-	padding: 20px;
+	padding: 100px;
 	box-shadow: 0 0 10px grey;
 	/*border-radius: 20px;*/
 }
@@ -570,6 +455,7 @@ grid-column: 2/-1;
 	line-height: 25px;
 	text-align: justify;
 	margin-bottom: 15px;
+
 }
 .skills{
 	margin-top: 0px;
@@ -670,6 +556,7 @@ footer li a:hover{
 	text-align: center;
 	font-weight: 900;
 	align-content: justify;
+	text-transform: uppercase;
 }
 
 #services button{
@@ -686,6 +573,7 @@ footer li a:hover{
 	margin-right: 50px;
 	/*padding: 0,50px ,0,50px;*/
 	margin-top: 30px;
+	padding: px;
 	
 }
 
@@ -702,8 +590,23 @@ footer li a:hover{
 	background: #228999;
 	color: #fff;
 }
-
-
+/*
+@keyframes nav-load{
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(100%);
+	}*/
+}
+@keyframes note-load{
+	0%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
 @media screen and (max-width: 760px){
 	body{
 		display: flex;
@@ -859,4 +762,3 @@ footer li a:hover{
 
 
 }
-
