@@ -1,15 +1,19 @@
 <?php
-$dbServer="localhost";
-$dbUsername="root";
-$password= "";
-$dbName="userregistration";
-$conn=mysqli_connect($dbServer,$dbUsername,$password,$dbName);
+try {
+	$db = new mysqli("localhost","root","","hospitalsystem");
+} catch (Exception $exc) {
+	echo $exc->getTraceAsString();
+}
 
-if(!$conn){
-	die("Connection Faile: " .mysqli_connect_error());
+if (isset($_POST['Name']) && isset($_POST['email']) && isset($_POST['Message'])) {
+	$name=$_POST['Name'];
+	$email=$_POST['email'];
+	$message=$_POST['Message'];
+
+	$is_insert=$db->query("INSERT INTO `contact`( `name`, `email`, `message`) VALUES ('','','')");
+	if ($is_insert == TRUE) {
+		echo "<h2>Thanks your request was submitted.</h2>";
+		exit();
+	}
 }
-else{
-	echo "Connection successful";
-}
-mysqli_close($conn);
 ?>
