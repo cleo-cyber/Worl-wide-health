@@ -874,14 +874,9 @@ footer li a:hover{
 		display: none;
 	}
 }
-@media (max-width: 858px)
-/*{
-	header .nav{
-		position: fixed;
-		width: 100%;
-		background-color: #;
-		top: 80px;
-		display: flex;
-		flex-direction: column;
+@media (max-width: 480px)
+{
+	body{
+		overflow-x: hidden;
 	}
-}*/
+}
