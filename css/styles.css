@@ -570,12 +570,12 @@ footer li a:hover{
 
 #services button{
 
-	width: 10%;
+	width: 20%;
 	height: 80px;
 	border: 1px solid #333;
 	border-radius: 4px;
 	/*border-color: #38acec;*/
-	background-color: #f4f4f4;
+	background-color: #38acec;
 	box-shadow: 5px 5px #888888;
 	transition: all .2s ease-in-out;
 	margin-left: 50px;
@@ -585,10 +585,11 @@ footer li a:hover{
 	padding: px;
 	align-content: center;
 	align-items: center;
+	color: #fff;
 }
 
 #services button a{
-	color: #000;
+	color: #fff;
 
 }
 #services button a:hover{
@@ -600,6 +601,12 @@ footer li a:hover{
 	background: #228999;
 	color: #fff;
 }
+#services .library1{
+	border: 5px solid #fff;
+	border-radius: 20px;
+	background-color: #f4f4f4;
+}
+
 /*
 @keyframes nav-load{
 	0%{
@@ -779,6 +786,8 @@ footer li a:hover{
 		text-align: center;
 		margin-top: 0px;
 		margin-bottom: 0px;
+		background-color: #f4f4f4;
+		color:#333;
 	}
 	#Us{
 		transition: 0.25s;
