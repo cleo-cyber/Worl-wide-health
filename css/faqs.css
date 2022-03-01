@@ -1,0 +1,89 @@
+*{
+	margin: 0px;
+ 	padding: 0px;
+ 	box-sizing: border-box;
+ 	font-family: Verdana;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #bedfe8;
+	background: url("../images/beth.jpg");
+	background-size: contain;
+}
+nav{
+	position:absolute;
+	top: 0px;
+	/* margin-left: 20px; */
+	float: left;
+	transition: 0.25s;
+	width: 100%;
+	height: 40px;
+	background-color: #228999;
+	
+}
+nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 900;
+	margin-left: 20px;
+	margin-top: 10px;
+	position: relative;
+	top: 10px;
+
+}
+h2{
+	display: block;
+	position: absolute;
+	top: 25%;
+	color:#fff;
+	text-align: center;
+	/* background: url("../images/beth.jpg"); */
+	/* background-size: 200px; */
+	/* height: 100px; */
+	/* width: 50%; */
+}
+.accordion{
+	max-width: 800px;
+	box-shadow: 0,0,10px;
+}
+.accordion .contentbox{
+	position: relative;
+	margin: 10px 20px;
+}
+.accordion .contentbox .label{
+	position: relative;
+	padding: 10px;
+	background: #2694af;
+	color: #fff;
+	cursor: pointer;
+}
+.accordion .contentbox .label:before{
+	content: '+';
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	font-size: 1.5em;
+}
+
+.accordion .contentbox.active .label:before{
+	content: '-';
+}
+.accordion .contentbox .content{
+	position: relative;
+	/*padding: 10px;*/
+	background: #fff;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	overflow-y: auto;
+}
+.accordion .contentbox.active .content{
+	height: 150px;
+	padding: 10px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/faqs.css">
+	<title>FAQs</title>
+</head>
+<body>
+		<nav><a href="index.html">Home</a></nav>
+		<h2>FAQs</h2>
+	<div class="accordion">
+		<div class="contentbox">
+			<div class="label">How do i create an account?</div>
+		
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. </p>
+		</div>
+	</div>
+		<div class="contentbox">
+			<div class="label">How do i book an appointment</div>
+		
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. </p>
+		</div>
+	</div>
+		<div class="contentbox">
+			<div class="label">Can one get treatment at their homes</div>
+		
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. </p>
+		</div>
+	</div>
+		<div class="contentbox">
+			<div class="label">How do i get get an insurance cover</div>
+		
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. </p>
+		</div>
+	</div>
+	</div>
+	<script>
+		const accordion=document.getElementsByClassName('contentbox');
+		 for (var i = 0; i < accordion.length; i++) 
+		 {
+		 	accordion[i].addEventListener('click',function()
+		 	{
+		 		this.classList.toggle('active')
+		 	});
+	 	}
+		
+
+	</script>
+</body>
+</html>

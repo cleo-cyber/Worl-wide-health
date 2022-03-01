@@ -157,7 +157,7 @@ header .Sign button:hover{
 #Welcome .note h3{
 	/*font-weight: 500;*/
 	font-size: 30px;
-	padding: ;
+	/* padding: ; */
 	line-height: 1.0em;
 
 }
@@ -184,7 +184,7 @@ header .Sign button:hover{
 	background: #f4f4f4;
 	border: none;
 	/*border-radius: 20px;*/
-	/*color: #f4f4f/*4*/;*/
+	/*color: #f4f4f/*4*/;
 
 }
 

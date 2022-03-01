@@ -158,7 +158,7 @@ text-align: center;
 	font-size: 14px;
 	text-transform: uppercase;
 	/*box-shadow: 2px 2px #333;*/
-	animation: ;
+	/* animation: ; */
 
 }
 
@@ -454,7 +454,7 @@ background-color: #fff;
 .innercont h2{
 	margin-bottom: 30px;
 	font-size: 30px;
-	flex-weight: 900;
+	font-weight: 900;
 }
 
 .text{
@@ -542,7 +542,7 @@ footer li a:hover{
 
 
 #services{
-	margin-top: 20px;
+	margin-top: 200px;
 	/*margin-bottom: 50px;*/
 	margin-bottom: 20px;
 	margin-right: 20px;
@@ -710,6 +710,9 @@ footer li a:hover{
 	header .Sign button{
 		margin: 0px;
 	}
+	/* #Us{
+		display: none;
+	} */
 	#Welcome{
 		transition: 0.25s;
 		display: grid;
@@ -730,24 +733,14 @@ footer li a:hover{
 		margin-top: 0px;
 		width: 150px;
 	}
-	#About{
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		margin: 20px;
-		grid-auto-rows: 30%;
+	#Us{
+		margin-bottom: 40px;
+		position: relative;
+		top: 2px;
+		bottom: 30px;
+		height: 50%;
 	}
 
-	#About .image1{
-		width: 100%;
-		margin-right: 0px;
-		margin-left: 0px;
-	}
-
-	#About .about: hover{
-		width: 100%;
-		margin-left:0px;
-	}
 
 	#imagespro{
 		display: grid;
@@ -757,10 +750,10 @@ footer li a:hover{
 		width:0 auto;
 		margin: 0px;
 	}
-	hr{
+	/* hr{
 		display: flex;
 		flex-direction:row;
-	}
+	} */
 
 	#Contact{
 		display: flex;
@@ -771,7 +764,7 @@ footer li a:hover{
 		align-content: center;
 	}
 	#services{
-		margin-top: 100px;
+		margin-top: 110px;
 		display: flex;
 		flex-direction: column;
 		/*width: 50%;*/
@@ -855,6 +848,9 @@ footer li a:hover{
 	#Welcome .note button{
 		width: 25%;
 	}
+	/*#Us{
+		display: none;
+	}*/
 	#services{
 		height: 50%;
 	}
