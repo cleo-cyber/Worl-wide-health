@@ -16,4 +16,8 @@ if (isset($_POST['Name']) && isset($_POST['email']) && isset($_POST['Message']))
 		exit();
 	}
 }
+
+
+  
+
 ?>

@@ -1,0 +1,39 @@
+body{
+    padding: 0%;
+    margin: 0;
+    position: absolute;
+}
+
+form{
+    position: relative;
+    top: 200px;
+    /* margin-left:  auto;
+     */
+     margin: auto 65vh;
+    display: flex;
+    flex-direction:column;
+    border: 2px solid #fff;
+    box-shadow: 0,0,10px gray;
+}
+
+form input[type='text']
+{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+form h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+form input[type='submit']
+{
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+    margin-left: 50px;
+    color: #fff;
+    background-color: #000;
+}

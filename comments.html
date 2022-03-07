@@ -1,0 +1,38 @@
+<?php
+	include 'comments.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/comments.css">
+    <title>Comments</title>
+</head>
+<body>
+    <header>
+		<div class="logo">
+			<a href="#">WWH</a>
+		</div>
+		<div class="nav">
+			<a href="index.html">Home</a>
+			<a href="#">About</a>
+			<a href="#">Contact Us</a>
+		</div>
+	</header>
+	<form class="values" action="comments.php" method="POST">
+		<h2>Add a comment</h2>
+		<input type="text" name="Username" placeholder="Firstname">
+	    <textarea name="message" id="" cols="30" rows="10" class="message"></textarea>
+		<input type="submit" value="Comment" >
+		<!-- <br> -->
+		
+	</form>
+ 
+</body>
+</html>
+</body>
+</html>

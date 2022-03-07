@@ -1,0 +1,96 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+header .logo_conainer{
+	/*margin-left: 20px;*/
+	/*width: 120px;*/
+	padding: 15px;
+	background-color: #247cf0;
+	color: #fff;
+	width: 35vh;
+
+}
+header .nav{
+	background-color: #263238;
+	display: flex;
+	flex-direction: column;
+	width: 35vh;
+	color: #fff;
+	padding: 5vh;
+	height: 120vh;
+	position: fixed;
+
+}
+
+header .nav ul{
+	list-style: none;
+	
+}
+
+
+header .nav ul li{
+
+	margin-top: 5vh;
+
+}
+header .nav ul li:first-child{
+	margin-top: 2vh;
+}
+header .nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.nav ul:hover{
+	height: auto;
+}
+header .nav ul li:hover{
+	
+}
+.drop_down1{
+	display: none;
+	font-size: 15px;
+}
+
+.nav ul li:hover .drop_down1{
+	transition: 0.25s;
+	display: block;
+	background-color: unset;
+}
+.nav ul li:hover .drop_down1 ul{
+	
+	display: block;
+	margin: 10px;
+
+}
+.nav ul li:hover .drop_down1 ul li{
+	width: 20vh;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.nav ul li:hover .drop_down1 ul li:last-child{
+	border: none;
+}
+
+#sub_header{
+	position: absolute;
+	right: 0;
+	width: 75vw;
+	height: 100vh;
+}
+#sub_header {
+	top: 0;
+	background-color: #fff;
+	box-shadow: 0,0,10px ge;
+
+}
