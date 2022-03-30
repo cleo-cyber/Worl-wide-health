@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/donLogin.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="Details"><h3>Enter Details</h3></div>
+    <form action="donLogin.php" method="POST">
+        <div class="register">
+        <label for="">First Name</label>
+        <input type="text" name="firstname" id="">
+        <label for="">Last Name</label>
+        <input type="text" name="lastname" id="">
+        <label for="">Age</label>
+        <input type="number" name="age" id="">
+        <label for="">Last donation(days)</label>
+        <input type="text" name="last" id="">
+        <label for="blood">Blood group</label>
+        <select name="blood" id="" required>
+            <option value="...">...</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="O-">O-</option>
+            <option value="O+">O+</option>
+        </select>
+        <label for="">Weight</label>
+        <input type="number" name="Weight" id="" required>
+        <label for="dissoder">dissoder</label>
+        <select name="dissoder" id="" required>
+            <option value="...">...</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <label for="">Email</label>
+        <input type="email" name="email" id="" required>
+        <label for="">Phone</label>
+        <input type="number" name="Phone" id="" >
+        <label for="">Location</label>
+        <input type="text" name="location" id="" required>
+        <input type="submit" >
+       
+    </div>
+
+    
+   
+       
+</body>
+</html>

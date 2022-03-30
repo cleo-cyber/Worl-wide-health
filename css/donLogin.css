@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana;
+    font-size: 20px;
+    background: #f4f4f4;
+
+}
+form{
+margin-right: 5vh;
+margin-left: 5vh;
+
+background: #fff;
+box-shadow: 0 0 10 grey;
+
+}
+form label{
+    display: block;
+    font-weight: 500;
+    margin-left: 22vh;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+
+
+}
+
+
+form input{
+    width: 60%;
+    height: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20vh;
+    border-radius: 5px;
+    /* border: 0; */
+    /* background-color: #af9c9c; */
+    outline: none;
+    text-align: center;
+   
+    
+}
+form input:focus{
+    transition: 0.25s;
+    background-color:#f4f4f4;
+    opacity: 0.8;
+    border-bottom: 1px solid #000;
+}
+
+form select{
+    transition: 0.25s;
+    margin-left: 20vh;
+    width: 60%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"]{
+width: 20%;
+margin-left: 50vh;
+background-color:rgba(15, 63, 63, 0.979);
+color: #fff;
+
+}
+
+.Details{
+    text-align: center;
+    /* margin-top: 20px; */
+    background-color: #fff;
+    height: 100px;
+}
+.Details h3{
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    right: 10vh;
+    text-decoration: underline;
+    color: rgba(15, 63, 63, 0.979);
+
+}
