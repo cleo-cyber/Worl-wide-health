@@ -14,6 +14,7 @@ body{
 	line-height: 1..5em;
 	background-color: #f4f4f4;
 	/*overflow-x: hidden;*/
+	transition:0.25s;
 
 }
 header{
@@ -24,7 +25,7 @@ header{
 
 header .logo{
 padding: 15px;
-width: 40vh;
+width: 25vw;
 background-color: rgb(204, 34, 34);
 color: white;
 height: 10vh;
@@ -34,6 +35,7 @@ box-shadow: 0 0 10px gray;
 header .logo h2{
 	margin-left: 20px;
 	letter-spacing: 5px;
+	font-weight: 900;
 
 
 }
@@ -42,7 +44,7 @@ header .logo h2{
 	padding: 15px;
 	background-color: #fff;
 	height: 90vh;
-	width: 40vh;
+	width: 25vw;
 	box-shadow: 0 0 10px gray;
 
 }
@@ -52,12 +54,18 @@ header li{
 	list-style: none;
 	padding-top: 10vh;
 	margin-left: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.055);
+	color: #000;
+	/* background: transparent; */
+	/* border-top: 1px solid rgba(0, 0, 0, 0.199); */
+	text-transform: uppercase;
 
 }
 header a{
 	text-decoration: none;
 	padding: 10px;
-	color: #333;
+	color: #000;
+	font-weight: 900;
 
 }
 
@@ -70,9 +78,11 @@ header a:hover{
 	position: relative;
 	right: 3vh;
 	top: 20vh;
+
 }
 .logout li{
 	color: #263238;
+	
 }
 
 #hero{
@@ -82,18 +92,19 @@ header a:hover{
 	/*background: url("beth.jpg");*/
 	background-size: contain;
 	height: 100vh;
-	width: 100%;
+	width: 60vw;
 	/*overflow-x: hidden;*/
 }
 #hero .content{
 	position: relative;
 	top: 30vh;
-	left: 40vh;
+	left: 27vw;
 }
 .content p{
 	color: #fff;
 	font-size: 30px;
 	letter-spacing: 5px;
+	
 }
 .content h2{
 	font-size: 30px;
@@ -102,7 +113,7 @@ header a:hover{
 	/* right: 5vh; */
 	letter-spacing: 5px;
 	position: relative;
-	right: 10vh;
+	right: 5vw;
 	margin-bottom: 5vh;
 
 }
@@ -110,17 +121,17 @@ header a:hover{
 	position: fixed;
 	z-index: -1;
 	margin-top: -25vh;
-	right: 1vh;
+	right: 1vw;
 	overflow-x: hidden;
 	height: 120vh;
 }
 #hero button{
 	border-radius: 20px;
-	width: 15%;
+	width: 30%;
 	height: 30px;
 	margin-top: 5vh;
 	position: relative;
-	left: 5vh;
+	left: 2vw;
 	background-color:rgb(204, 34, 34) ;
 	border: 0;
 	color: #000;
@@ -129,3 +140,4 @@ header a:hover{
 	transition: 0.25s;
 	transform: scale(1.1);
 }
+

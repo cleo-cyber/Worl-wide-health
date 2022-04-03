@@ -63,7 +63,7 @@ header .logo a{
 
 header .logo a:hover{
 	text-decoration: none;
-	/*border: none;*/
+
 
 }
 
@@ -72,10 +72,10 @@ header .nav{
 
 }
 header .nav a{
-	/*margin-left: 20px;*/
+
 	padding: 0 20px 0 20px;
 	text-decoration: none;
-	/*text-transform: uppercase;*/
+
 }
 
 header .Sign{
@@ -98,7 +98,7 @@ header .Sign button a{
 	transition: ease 0.3s;
 	text-decoration: none;
 	padding: 10px;
-	/*margin: 3px;*/
+	
 }
 header .Sign button:hover{
 	background: #6495ED;
@@ -110,15 +110,16 @@ header .Sign button:hover{
 #Welcome{
 
 	display: grid;
-	/*grid-template-columns: 1fr 1fr;*/
+	
 	height: 850px;
 	background:url("../rename.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #f4f4f4;
 	color: white;
-	/*grid-gap:0 ;*/
+
 	text-align: justify;
+	
 
 }
 
@@ -129,23 +130,15 @@ header .Sign button:hover{
 	opacity: 0.8;
 	width: 100%;
 	position: relative;
-	/*top: 100px;*/
-/*	display: flex;
-	justify-content: center;
-	align-items: center;*/
+
 }
 
-/*#Welcome .pic img{
-	display: flex;
-	flex-direction: row;
-	height: 500px;
-	width: 100%;
-}*/
+
 
 #Welcome .note{
 margin-top: 300px;
 text-align: center;
-
+animation: slide-up 2s;
 }
 #Welcome .note button{
 	transition:all .2s ease-in-out ;
@@ -157,8 +150,7 @@ text-align: center;
 	color: #228999;
 	font-size: 14px;
 	text-transform: uppercase;
-	/*box-shadow: 2px 2px #333;*/
-	/* animation: ; */
+
 
 }
 
@@ -170,17 +162,15 @@ text-align: center;
 }
 #Welcome .note h3, #Welcome .note p{
 
-	/*margin-left: 5%;*/
-	/*width: 50%;*/
+
 	padding: 0;
 	align-content: center;
 
-	/*margin-top: 20%;*/
 
 }
 
 #Welcome .note h3{
-	padding: ;
+	
 	line-height: 0.9em;
 	/*text-align: justify;*/
 	text-transform: uppercase;
@@ -220,6 +210,7 @@ margin-bottom: 40px;
 	color: #38acec;
 	background-color: #fff;
 	border-radius: 20px;
+	/* animation: slide-up 2s; */
 
 }
 #imagespro img{
@@ -607,15 +598,8 @@ footer li a:hover{
 	background-color: #f4f4f4;
 }
 
-/*
-@keyframes nav-load{
-	0%{
-		transform: translateY(-100%);
-	}
-	100%{
-		transform: translateY(100%);
-	}*/
-}
+
+
 @keyframes note-load{
 	0%{
 		transform: translateX(-100%);
@@ -883,5 +867,15 @@ footer li a:hover{
 {
 	body{
 		overflow-x: hidden;
+	}
+}
+@keyframes slide-up{
+	from{
+		opacity: 0.2;
+		line-height: 100px;
+	}
+	to{
+		opacity: 1;
+		line-height: 25px;
 	}
 }

@@ -1,0 +1,108 @@
+*{
+    line-height: 1.5em;
+    letter-spacing: 3px;
+    font-size: 16px;
+    width: auto;
+    height: auto;
+    
+}
+body{
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+#why_donate{
+position: absolute;
+top: 0;
+left: 40vh;
+height: 95vh;
+margin: 20px;
+
+box-shadow: 0 0 10px gray;
+font-family: Georgia, 'Times New Roman', Times, serif;
+transition: 0.25s;
+width: 70vw;
+
+opacity: 0.9;
+background-size: cover;
+
+}
+.image{
+   
+    position: relative;
+    left: 22vw;
+    margin-top: 10vh;
+   
+    margin-bottom: 5vh;
+}
+.image img{
+    border-radius: 50%;
+    height: 25vh;
+    right: 6vw;
+    width: 25%;
+  
+}
+.reason{
+    
+display: grid;
+grid-template-columns: repeat(2,1fr);
+
+text-align: justify;
+position: relative;
+
+margin-top: 5vh;
+height: 55vh;
+
+
+}
+
+.reason p{
+    width: 25vw;
+    height: auto;
+    position: relative;
+    /* right: 5vh; */
+    color: #000;
+    font-weight: 500;
+    /* letter-spacing: 5px; */
+    display: flex;
+    flex-direction: column;
+    line-height:30px;
+    font-family: Verdana;
+    animation: slide-up 2s;
+}
+.reason p button{
+
+    width: 15vw;
+    height: 5vh;
+    position: relative; 
+    border: 0;
+    margin-top: 3vh;
+    background-color:rgb(204, 34, 34) ;
+    cursor: pointer;
+    border-radius: 20px;
+}
+p button:hover{
+    transition: 0.25s;
+    transform: scale(0.9);
+    background-color:rgba(241, 8, 8, 0.856) ;
+}
+
+.reason h2{
+    position: relative;
+    left: 5vh;
+    width: 20vw;
+    /* text-decoration: underline; */
+    /* text-decoration-skip: object spaces; */
+    font-style: italic;
+    font-size: 20px;
+
+}
+@keyframes slide-up{
+    from{
+        opacity: 0.2;
+        line-height: 100px;
+    }
+    to{
+        opacity: 1;
+        line-height: 25px;
+    }
+}

@@ -17,8 +17,7 @@ if(isset($_POST['submit']))
     $name=$_POST['Username'];
      $message=$_POST['message'];
 
-     $sql="INSERT INTO comments(name,message")
-     VALUES($name,$message);
+     $sql="INSERT INTO comments(name,message)VALUES('$name','$message')";
      $result=mysqli_query($conn,$sql);
  
      if($result){
