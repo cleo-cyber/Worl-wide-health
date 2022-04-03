@@ -2,8 +2,8 @@
     line-height: 1.5em;
     letter-spacing: 3px;
     font-size: 16px;
-    width: auto;
-    height: auto;
+    /* width: auto; */
+    /* height: auto; */
     
 }
 body{
@@ -13,18 +13,16 @@ body{
 #why_donate{
 position: absolute;
 top: 0;
-left: 40vh;
+left: 25vw;
 height: 95vh;
 margin-right: 2vw;
 margin-left: 2vw;
 margin-top: 2vw;
 margin-bottom: 2vw;
-
 box-shadow: 0 0 10px gray;
 font-family: Georgia, 'Times New Roman', Times, serif;
 transition: 0.25s;
 width: 70vw;
-
 opacity: 0.9;
 background-size: cover;
 

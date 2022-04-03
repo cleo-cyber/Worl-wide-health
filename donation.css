@@ -88,7 +88,7 @@ header a:hover{
 #hero{
 	position:absolute;
 	top: 0;
-	left: 40.1vh;
+	left:10.1vw;
 	/*background: url("beth.jpg");*/
 	background-size: contain;
 	height: 100vh;
@@ -98,12 +98,13 @@ header a:hover{
 #hero .content{
 	position: relative;
 	top: 30vh;
-	left: 27vw;
+	left: 30vw;
 }
 .content p{
 	color: #fff;
 	font-size: 30px;
 	letter-spacing: 5px;
+	/* left: 10vw; */
 	
 }
 .content h2{
@@ -113,7 +114,8 @@ header a:hover{
 	/* right: 5vh; */
 	letter-spacing: 5px;
 	position: relative;
-	right: 5vw;
+	/* right: 5vw; */
+	left: -5vw;
 	margin-bottom: 5vh;
 
 }
