@@ -15,7 +15,10 @@ position: absolute;
 top: 0;
 left: 40vh;
 height: 95vh;
-margin: 20px;
+margin-right: 2vw;
+margin-left: 2vw;
+margin-top: 2vw;
+margin-bottom: 2vw;
 
 box-shadow: 0 0 10px gray;
 font-family: Georgia, 'Times New Roman', Times, serif;

@@ -31,8 +31,8 @@ header{
 	grid-template-rows: 1fr;
 	/*grid-auto-columns: 60%;*/
 	grid-gap: 20px;
-	height: 70px;
-	width: 100%;
+	height: 10vh;
+	width: 100vw;
 	background-color:#228999 ;
 	/*margin-right: 20px;*/
 	margin-right: 20px;
@@ -128,7 +128,7 @@ header .Sign button:hover{
 	box-sizing: border-box;
 	background-color: black;
 	opacity: 0.8;
-	width: 100%;
+	width: 100vw;
 	position: relative;
 
 }
@@ -175,7 +175,7 @@ animation: slide-up 2s;
 	/*text-align: justify;*/
 	text-transform: uppercase;
 	font-size: 50px;
-	width: 100%;
+	width: 100vw;
 	animation: note-load 400ms;
 
 }
@@ -214,7 +214,7 @@ margin-bottom: 40px;
 
 }
 #imagespro img{
-width: 100%;
+width: 100vw;
 
 }
 #imagespro  p{
@@ -244,7 +244,7 @@ color: #000;
 	box-sizing: border-box;
 	background: url("../images/beth.jpg");
 	margin-top: 0px;
-	height: 200px;
+	height: 23vh;
 	background-size: cover;
 	position: relative;
 	top: 0;
@@ -259,7 +259,7 @@ color: #000;
 	z-index: 1;
 	margin: 20px;
 	box-shadow: 0px 0px 10px grey;
-	height: 430px;
+	height: 45vh;
 	/*border: 2px solid #38acec;*/
 	
 	
@@ -288,7 +288,7 @@ color: #000;
 	box-sizing: border-box;
 	background: url("../images/arnold.jpg");
 	margin-top: 0px;
-	height: 200px;
+	height: 23vh;
 	background-size: cover;
 	position: relative;
 	top: 0;
@@ -321,7 +321,7 @@ background-color: #fff;
 	box-sizing: border-box;
 	background: url("../images/dance.jpg");
 	margin-top: 0px;
-	height: 200px;
+	height: 23vh;
 	background-size: cover;
 	position: relative;
 	top: 0;
@@ -362,7 +362,7 @@ background-color: #fff;
 #Contact .Intouch{
 	position: relative;
 	left: 2%;
-	width: 100%;
+	width: 100vw;
 }
 
 #Contact input[type="text"], input[type="email"]{
@@ -430,14 +430,14 @@ background-color: #fff;
 
 }
 #Us{
-	height: 300px;
+	height: 50vh;
 	background: #fff;
 }
 .innercont{
-	width: 60%;
+	width: 75vh;
 	float: right;
 	background-color: #fdfdfd;
-	padding: 100px;
+	padding: 10vh 10vw;
 	box-shadow: 0 0 10px grey;
 	/*border-radius: 20px;*/
 }
@@ -514,7 +514,7 @@ footer h2{
 	font-weight: 900;
 	font-size: 15px;
 	border-bottom: 2px darkgray dotted;
-	width: 50%;
+	width: 20vh;
 	border-bottom-width: 2px;
 }
 footer div{
@@ -533,11 +533,11 @@ footer li a:hover{
 
 
 #services{
-	margin-top: 200px;
+	margin-top: 10vh;
 	/*margin-bottom: 50px;*/
-	margin-bottom: 20px;
-	margin-right: 20px;
-	margin-left: 20px;
+	margin-bottom: 10vh;
+	margin-right: 2vw;
+	margin-left: 2vw;
 	display: flex;
 	flex-direction: column;
 	background-color: #f4f4f4;
@@ -561,8 +561,8 @@ footer li a:hover{
 
 #services button{
 
-	width: 20%;
-	height: 80px;
+	width: 20vw;
+	height: 10vh;
 	border: 1px solid #333;
 	border-radius: 4px;
 	/*border-color: #38acec;*/
@@ -611,7 +611,7 @@ footer li a:hover{
 #services .library{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	font-weight: 500;
 	color: #333;
 	transform: scale(0.9);
@@ -630,15 +630,15 @@ footer li a:hover{
 	transition: 0.25s;
 }
 #services .library button{
-	width: 70%;
+	width: 15vw;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	margin-right: 10px;
+	margin-right: 20px;
 	margin-left: 10px;
 	align-content: center;
 }
 #services .library p{
-	margin: 20px;
+	margin: ;
 	text-align: justify;
 }
 @media only screen and (max-width: 769px){
@@ -693,13 +693,13 @@ footer li a:hover{
 		margin-top: 20px;
 		display: flex;
 		flex-direction: column;
-		width: 19%;
-		padding: 1px;
+		width: 50vw;
+		/* padding: 5px; */
 
 
 	}
 	header .Sign button{
-		margin: 0px;
+		margin-right: 1vw;
 	}
 	/* #Us{
 		display: none;
@@ -709,8 +709,8 @@ footer li a:hover{
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
-		height: 400px;
-		width: 100%;
+		height: 50vh;
+		width: 100vw;
 		/*height: 90%;*/
 	}
 	#Welcome .note{
@@ -722,14 +722,14 @@ footer li a:hover{
 	#Welcome .note button{
 		transition: 0.25s;
 		margin-top: 0px;
-		width: 150px;
+		width: 20vw;
 	}
 	#Us{
-		margin-bottom: 40px;
+		margin-bottom: 10vh;
 		position: relative;
 		top: 2px;
 		bottom: 30px;
-		height: 50%;
+		height: 60vh;
 	}
 
 
@@ -738,7 +738,7 @@ footer li a:hover{
 		grid-template-columns: 1fr;
 		grid-auto-rows: 35%;
 		font-size: 16px;
-		width:0 auto;
+		width:90w;
 		margin: 0px;
 	}
 	/* hr{
@@ -755,11 +755,11 @@ footer li a:hover{
 		align-content: center;
 	}
 	#services{
-		margin-top: 110px;
+		margin-top: 10vh;
 		display: flex;
 		flex-direction: column;
 		/*width: 50%;*/
-		width: 100%;
+		width: 100vw;
 
 	}
 	#services button{
@@ -777,8 +777,9 @@ footer li a:hover{
 		transition: 0.25s;
 		display: flex;
 		flex-direction: column;
-		width: 100%;
-		margin-top: 100px;
+		width: 100vw;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
 
 	}
 
