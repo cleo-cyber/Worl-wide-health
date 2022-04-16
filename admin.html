@@ -1,71 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/admin.css">
-	<title>Admin</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="admin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
 </head>
 <body>
-	<header>
-		<div class="logo_conainer">
-			<h2>Medical Dashboard</h2>
-			
+    <aside>
+        
+        <!-- <div class="menu-icon">
+            <i class='bx bx-menu' ></i>
+            <i class='bx bx-x' ></i>
+        </div> -->
+        <ul class="sidebar_menu">
 
-		</div>
-		<div class="nav">
-			<ul>
-				<li><a href="#">Dashboard</a></li>
-				<li><a href="#">Patient Dashboard</a></li>
-				<li><a href="#">Doctor Dashboard</a></li>
-				<li><a href="#">Doctors</a>
-					<div class="drop_down1">
-						<ul>
-							<li><a href="#">All Doctors</a></li>
-							<li><a href="#">Add Doctor</a></li>
-							<li><a href="#">Edit Doctor</a></li>
-							<li><a href="#">Doctor Profile</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">Patients</a>
-					<div class="drop_down1">
-						<ul>
-							<li><a href="#">All Patients</a></li>
-							<li><a href="#">Add Patient</a></li>
-							<li><a href="#">Edit Patient</a></li>
-							<li><a href="#">Patients Profile</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">Appointments</a>
-					<div class="drop_down1">
-						<ul>
-							<li><a href="#">Doctors Schedule</a></li>
-							<li><a href="#">Book Appointment</a></li>
-							
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">Billing</a></li>
-				<li><a href="#">Support</a>
-					<div class="drop_down1">
-						<ul>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Help Center</a></li>
-							
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</header>
+             
+            <li>
+                <a href="dashboard.html">
+                    <span>Dashboard</span>
+                </a>
+            </li>
 
-	<section id="sub_header">
-		<div class="search">
-			<input type="text" name="search" placeholder="Search..">
-			<button type="submit"></button>
-		</div>
-	</section>
+            <li>
+                <a href="">
+                    <span>Doctor</span>
+                    <i class='bx bx-chevron-right' ></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="view.html">All Doctors</a></li>
+                    <li><a href="password.html">Add Doctor</a></li>
+                    <li><a href="password.html">Edit Doctor</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="">
+                    <span>Patients</span>
+                    <i class='bx bx-chevron-right' ></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="department.html">All Patients</a></li>
+                    <li><a href="department.html">Add Patient</a></li>
+                    <li><a href="department.html">Edit Patient</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="">
+                    <span>Appointments</span>
+                    <i class='bx bx-chevron-right' ></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#">Apointments</a></li>
+                    <li><a href="viewapp.html">Doctor's Schedule</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="">
+                    
+                    <span>Support</span>
+                    <i class='bx bx-chevron-right' ></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="viewapp.html">Help Center</a></li>
+                </ul>
+            </li>
+            <li>
+            <!-- <li>
+                    <a href="">
+                        <span>Pharmacy</span>
+                        <i class='bx bx-chevron-right' ></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="book.html">Book Appointment</a></li>
+                        <li><a href="viewapp.html">Doctor's Schedule</a></li>
+                    </ul>
+                </li> -->
+                <a href="index.html">
+                    <i class='bx bx-log-out'></i>
+                    <span>Log Out</span>
+                </a>
+            </li>
+
+            
+
+
+        </ul>
+
+            </aside>
+
+  <section>
+    <h1 class="slide-left">The <br>Future</h1>
+    <p class="slide-left">Get high quality services from the comfort of you home. </p>
+  </section>
+  
+
+  
+
 </body>
 </html>
