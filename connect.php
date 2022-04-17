@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
 	$phone=$_POST['Mobile'];
 	$pass=$_POST['Password'];
 
-	$sql= "INSERT INTO `adoctor`(d_name, d_email, department, mobile, password)
+	$sql= "INSERT INTO `adoctor`(d_name, d_email, department, mobile, d_password)
 	VALUES('$name','$email','$department','$phone','$pass')";
 
 	$result=mysqli_query($conn,$sql);

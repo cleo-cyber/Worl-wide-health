@@ -7,7 +7,7 @@ include 'connect.php';
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 	<title>Display</title>
 	<style type="text/css">
@@ -80,7 +80,7 @@ include 'connect.php';
 					$name=$row['d_name'];
 					$email=$row['d_email'];
 					$dept=$row['department'];
-					$password=$row['password'];
+					$password=$row['d_password'];
 					$mobile=$row['mobile'];
 					
 					echo '<tr>
@@ -90,12 +90,10 @@ include 'connect.php';
 				<td>'.$dept.'</td>
 				<td>'.$password.'</td>
 				<td>'.$mobile.'</td>
-				<td style="display: flex;"><button style="width: 30%; height:5vh;"><a style="color: #fff;" href="#">Update</a></button>
-			<button style="width: 30%;height:5vh;position:relative;right:4.5vw;background:red;"><a style="color: #fff;" href="#">Delete</a></button>
+				<td style="display: flex;"><button style="width: 30%; height:5vh;"><a style="color: #fff;" href="update.php? updateid='.$id.'">Update</a></button>
+			<button style="width: 30%;height:5vh;position:relative;right:4.5vw;background:red;"><a style="color: #fff;" href="delete.php?deleteid='.$id.'">Delete</a></button>
 		</td>
-
-	
-			</tr>';
+	</tr>';
 				}
 
 			}

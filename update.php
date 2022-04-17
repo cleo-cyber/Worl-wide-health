@@ -1,5 +1,6 @@
 <?php
 include 'connect.php';
+$id=$_GET['updateid'];
 if (isset($_POST['submit'])) {
 	$name=$_POST['name'];
 	$email=$_POST['Email'];
@@ -7,8 +8,7 @@ if (isset($_POST['submit'])) {
 	$phone=$_POST['Mobile'];
 	$pass=$_POST['Password'];
 
-	$sql= "INSERT INTO `adoctor`(d_name, d_email, department, mobile,d_password)
-	VALUES('$name','$email','$department','$phone','$pass')";
+	$sql="UPDATE `adoctor` set doctor_id=$id,d_name='$name',d_email='$email',department='$department',mobile='$phone',d_password='$pass' where doctor_id=$id";
 
 	$result=mysqli_query($conn,$sql);
 	if (!$result) {
@@ -16,6 +16,7 @@ if (isset($_POST['submit'])) {
 	}
 	else{
 		header("location:display.php");
+        // echo "updated successfully";
 	}
 	
 }
@@ -70,7 +71,7 @@ if (isset($_POST['submit'])) {
 		<input type="text" class="form-control" placeholder="Enter password" name="Password" autocomplete="off">
 	</div>
  
-  <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+  <button type="submit" class="btn btn-primary" name="submit">Update</button>
 </form>
    </div>
 
