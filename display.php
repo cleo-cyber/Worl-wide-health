@@ -7,7 +7,7 @@ include 'connect.php';
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
 	<title>Display</title>
 	<style type="text/css">
@@ -32,6 +32,7 @@ include 'connect.php';
 			margin-top: 5vh;
 			margin-bottom: 5vh;
 			border-collapse: collapse;
+			/* background-color: #f4f4f4; */
 
 
 		}
@@ -43,7 +44,7 @@ include 'connect.php';
 
 		}
 		table thead tr th{
-			padding-right: 10vh;
+			padding-right: 5vw;
 			color: #333;
 			/*border: 1px solid #f4f4f4;*/
 			height: 5vh;
@@ -55,7 +56,7 @@ include 'connect.php';
 </head>
 <body>
 	<div class="button">
-		<a href="adddoc.html"><button>Add user</button></a>
+		<a href="adddoc.php"><button>Add Doctor</button></a>
 	</div>
 	<table>
 		<thead>
@@ -65,6 +66,7 @@ include 'connect.php';
 			<th>Email</th>
 			<th>Department</th>
 			<th>Password</th>
+			<th>Mobile</th>
 			<th>Operation</th>
 		</tr>
 		</thead>
@@ -78,21 +80,27 @@ include 'connect.php';
 					$name=$row['d_name'];
 					$email=$row['d_email'];
 					$dept=$row['department'];
-					$mobile=$row['mobile'];
 					$password=$row['password'];
-			// 		echo '<tr>
-			// 	<th scope="row">'.$id.'</th>
-			// 	<td>'.$name.'</td>
-			// 	<td>'.$email'</td>
-			// 	<td>'.$dept.'</td>
-			// 	<td>'.$mobile.'</td>
-			// 	<td>'.$password.'</td>
-			// </tr>'
+					$mobile=$row['mobile'];
+					
+					echo '<tr>
+				<th scope="row" style="position:relative;">'.$id.'</th>
+				<td>'.$name.'</td>
+				<td>'.$email.'</td>
+				<td>'.$dept.'</td>
+				<td>'.$password.'</td>
+				<td>'.$mobile.'</td>
+				<td style="display: flex;"><button style="width: 30%; height:5vh;"><a style="color: #fff;" href="#">Update</a></button>
+			<button style="width: 30%;height:5vh;position:relative;right:4.5vw;background:red;"><a style="color: #fff;" href="#">Delete</a></button>
+		</td>
+
+	
+			</tr>';
 				}
 
 			}
 			?>
-	
+		
 
 		</tbody>
 	</table>

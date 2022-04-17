@@ -14,6 +14,9 @@ if (isset($_POST['submit'])) {
 	if (!$result) {
 		die("connection failed".mysqli_connect_error());
 	}
+	else{
+		header("location:display.php");
+	}
 	
 }
 ?>
@@ -44,7 +47,7 @@ if (isset($_POST['submit'])) {
   <body>
    <div class="container">
    	
-   	<form method="post" action="connect.php" >
+   	<form method="post">
  	 <div class="form-group">
 		<label  class="form-label">Full Name</label>
 		<input type="text" class="form-control" placeholder="Enter Name" name="name" autocomplete="off">
