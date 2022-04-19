@@ -13,8 +13,13 @@ $location=$_POST["location"];
 if($age<18){
     echo "Illegible for donation";
 }
-elseif($lastDonation<112){
+elseif($lastDonation>0 && $lastDonation<112){
     echo "Too early for another donation";
+}
+elseif($lastDonation==0)
+{
+    echo "Thank you for volunteering we'll contact you on donation date";
+    header("location:donation.html");
 }
 elseif($dissoder=="Yes"){
     echo "<label>What is the dissoder?</> <br/>";
@@ -25,6 +30,7 @@ elseif($age<18 && $lastDonation<112){
 }
 else{
     echo "Thank you for volunteering we'll contact you on donation date";
+    header("location:donation.html")
 }
 $server="localhost";
 $username="root";
