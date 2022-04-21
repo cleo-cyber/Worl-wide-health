@@ -90,7 +90,7 @@ select{
     margin-left: 2vw;
     border-radius: 5px;
     background-color: #333;
-    color: white;
+color: white;
 }
 .sub input[type="submit"].back:hover{
     background-color: rgba(51, 51, 51, 0.966);

@@ -8,8 +8,9 @@ html{
 	scroll-behavior: smooth;
 }
 header a:hover{
-	border-bottom: 1px solid #fff;
-	transition: ease 0.3s;
+	border: 0;
+	transition: ease;
+	background: #0ac4e031;
 }
 
 body{

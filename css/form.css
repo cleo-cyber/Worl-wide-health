@@ -1,8 +1,12 @@
+*{
+	background: url("../login.jpg");
+}
+
 body{
 	margin: 0;
 	padding: 0;
 	font-family: Verdana;
-	background: url("login.jpg");
+	/* background: url("../images/"); */
 	background-size: cover;
 	font-size: 16px;
 }

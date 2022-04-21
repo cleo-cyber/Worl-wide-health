@@ -18,7 +18,7 @@ elseif($lastDonation>0 && $lastDonation<112){
 }
 elseif($lastDonation==0)
 {
-    echo "Thank you for volunteering we'll contact you on donation date";
+    // echo '<script>alert("Thank you for volunteering We will contact you on the donation date")</script>';
     header("location:donation.html");
 }
 elseif($dissoder=="Yes"){
@@ -29,8 +29,9 @@ elseif($age<18 && $lastDonation<112){
     echo "Illegible for donation";
 }
 else{
-    echo "Thank you for volunteering we'll contact you on donation date";
-    header("location:donation.html")
+    //  echo '<script>alert("Thank you for volunteering We will contact you on the donation date")</script>';
+    
+    header("location:donation.html");
 }
 $server="localhost";
 $username="root";
@@ -40,17 +41,15 @@ $conn=new mysqli($server,$username,$password,$dbname);
 if(!$conn){
     die("connection failed: ".$conn->connect_error);
 }
-// else{
-//     echo "successfully connected";
-//     echo "<br>";
-// }
+
 
 $sql="INSERT INTO donation(firstname, lastname, _location, blood, email, phone, age, dissoder, _weight,lastdonation) VALUES('$firsname','$lastname','$location','$blood','$email','$Phone','$age','$dissoder','$weight','$lastDonation')";
+$result=mysqli_query($conn,$sql);
 
-// if(mysqli_query($conn,$sql)){
-// echo "Thank you for filling the form we'll contact you on donation date";
-// }
-// else{
-//     echo  "Error: " . $sql . "<br>" . mysqli_error($conn);
-// }
+if(!$result){
+    die("connection failed: ".$conn->connect_error);
+
+}
+
+
 
