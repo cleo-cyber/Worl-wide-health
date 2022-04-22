@@ -7,10 +7,12 @@ a{
 html{
 	scroll-behavior: smooth;
 }
-header a:hover{
-	border: 0;
-	transition: ease;
-	background: #0ac4e031;
+header .nav a:hover{
+	border: none;
+	background-color:inherit;
+	border:1px solid #0ac4e031;
+	height: 3vh;
+	color: #fff;
 }
 
 body{
@@ -23,22 +25,23 @@ body{
 	font-size: 16px;
 /*	margin: 20px;*/
 	transition: 0.25s;
-	width: 100vw;
-	overflow-x: hidden;
+	/* width: 100vw; */
+	/* overflow-x: hidden; */
 
 }
 
 header{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
+	display: flex;
+	justify-content: space-between;
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	/* grid-template-rows: 1fr; */
 	/*grid-auto-columns: 60%;*/
 	grid-gap: 20px;
 	height: 10vh;
-	width: 98.5vw;
+	width: 100%;
 	background-color:#228999 ;
 	/*margin-right: 20px;*/
-	margin-right: 20px;
+	/* margin-right: 20px; */
 	/*margin-left: 20px;*/
 	transition: 0.25s;
 	position: fixed;
@@ -50,8 +53,8 @@ header{
 }
 
 header .logo{
-	margin-left: 40px;
-	margin-top: 20px;
+	margin-left: 5vw;
+	margin-top: 4.5vh;
 	transition: 0.25s;
 
 }
@@ -71,20 +74,29 @@ header .logo a:hover{
 }
 
 header .nav{
-	margin: 20px;
+	margin-top: 4vh;
+	margin-right: 3vh;
+	margin-left: 20vh;
 
 }
 header .nav a{
 
-	padding: 0 20px 0 20px;
+	padding: 0 3vw 0 2vw;
 	text-decoration: none;
 
 }
+.active{
+	border: none;
+	background-color:inherit;
+	border:1px solid #0ac4e031;
+	height: 3vh;
+	color: #fff;
+}
 
 header .Sign{
-	margin-left: 60px;
-	margin-top: 20px;
-	padding: 0px 5px ;
+	margin-left: 5vw;
+	margin-top: 4vh;
+	padding: 0px 1vh ;
 }
 
 header .Sign button{
@@ -93,18 +105,19 @@ header .Sign button{
 	background: #333;
 	padding: 5px;
 	transition: 0.25s;
-	margin-left: 30px;
+	/* margin-left: 30px; */
+	margin-right: 5vw;
 }
 
 header .Sign button a{
 	border: none;
 	transition: ease 0.3s;
 	text-decoration: none;
-	padding: 10px;
+	padding: 1vh;
 	
 }
 header .Sign button:hover{
-	background: #6495ED;
+	/* background: #6495ED; */
 	transition: 0.25s;
 	border-color: #333;
 	
@@ -114,15 +127,15 @@ header .Sign button:hover{
 
 	display: grid;
 	
-	height: 850px;
+	height: 100vh;
 	background:url("../rename.jpg");
 	background-size: cover ;
 	width: 100vw;
 	background-repeat: no-repeat;
 	background-color: #f4f4f4;
 	color: white;
-
 	text-align: justify;
+	margin-bottom: 5vh;
 	/* width: 100vh; */
 	
 
@@ -132,16 +145,18 @@ header .Sign button:hover{
 
 	box-sizing: border-box;
 	background-color: black;
+	
 	opacity: 0.8;
-	width: 100vw;
+	width: 100%;
 	position: relative;
+	
 
 }
 
 
 
 #Welcome .note{
-margin-top: 300px;
+margin-top: 40vh;
 text-align: center;
 animation: slide-up 2s;
 }
@@ -197,21 +212,23 @@ animation: slide-up 2s;
 #imagespro{
 display: flex;
 flex-direction: row;
-margin-top: 40px;
-margin-left: 40px;
-margin-right: 40px;
+margin-top: 5vh;
+margin-left: 5vw;
+margin-right: 5vw;
 justify-content: space-around;
 align-items: justify;
-margin-bottom: 40px;
+margin-bottom: 5vh;
 
 }
 #imagespro button{
-	height: 40px;
+	height: 5vh;
 	width: 90%;
-	margin-right: 20px;
-	margin-left: 20px;
+	margin-right: 3vw;
+	margin-left: 1vw;
 	align-content: center;
 	border: 2px solid #228999;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
 	color: #38acec;
 	background-color: #fff;
 	border-radius: 20px;
@@ -219,7 +236,7 @@ margin-bottom: 40px;
 
 }
 #imagespro img{
-width: 100vw;
+width: 100%;
 
 }
 #imagespro  p{
@@ -262,9 +279,9 @@ color: #000;
 #imagespro .im1{
 	background-color: #fff;
 	z-index: 1;
-	margin: 20px;
+	margin: 2vh;
 	box-shadow: 0px 0px 10px grey;
-	height: 45vh;
+	height: auto;
 	/*border: 2px solid #38acec;*/
 	
 	
@@ -305,6 +322,7 @@ background-color: #fff;
 	z-index: 1;
 	margin: 20px;
 	box-shadow: 0px 0px 10px grey;
+	/* height: 100%; */
 }
 #imagespro .im3{
 background-color: #fff;
@@ -361,22 +379,23 @@ background-color: #fff;
 	font-size: 16px;
 	color: #333;
 	font-weight: 500;
-	margin-top: 20px;
+	margin-top: 5vh;
+	width: 100%;
 }
 
 #Contact .Intouch{
 	position: relative;
 	left: 2%;
-	width: 100vw;
+	width: 100%;
 }
 
 #Contact input[type="text"], input[type="email"]{
 	border: 0;
 	width: 30%;
-	height: 30px;
+	height: 5vh;
 	padding: 5px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 	border-radius: 20px;
 	border-color: #333;
 	outline: none;
@@ -493,12 +512,13 @@ background-color: #fff;
 	width: 22%;
 }
 footer{
-	background: #000;
+	background:#228999e5;
 	height: auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	color: #fff;
 	/*text-align: center;*/
+	width: 100vw;
 	opacity: 0.8;
 }
 
@@ -511,16 +531,22 @@ footer li{
 
 footer hr{
 	width: 100%;
-	color: #38ACEC;
+	/* color: #38ACEC; */
 }
 footer h2{
 	margin-left: 30px;
-	color: #f4f4f4;
+	color: #000;
 	font-weight: 900;
 	font-size: 15px;
 	border-bottom: 2px darkgray dotted;
 	width: 20vh;
 	border-bottom-width: 2px;
+}
+footer p {
+	color: #000;
+}
+footer li{
+	color: #000;
 }
 footer div{
 	margin: 15px;
@@ -528,12 +554,15 @@ footer div{
 footer li a{
 	text-decoration: none;
 	border: none;
+	color: #000;
 	/*border-bottom: 2px  darkgray dotted;*/
 
 
 }
 footer li a:hover{
-	color: #488AC7;
+	transition: 0.25s ease;
+	border-bottom: 1px solid #000;
+	margin-left: 2vh;
 }
 
 
@@ -643,7 +672,7 @@ footer li a:hover{
 	align-content: center;
 }
 #services .library p{
-	margin: ;
+	/* margin: ; */
 	text-align: justify;
 }
 @media only screen and (max-width: 769px){
@@ -672,9 +701,9 @@ footer li a:hover{
 	header .nav{
 		display: flex;
 		flex-direction: row;
-		margin-right: 10px;
-		margin-left: 10px;
-		margin-bottom: 0px;
+		/* margin-right: 10px; */
+		/* margin-left: 10px; */
+		/* margin-bottom: 0px; */
 	}
 	header .nav a{
 		margin-left: 0px;
@@ -687,24 +716,34 @@ footer li a:hover{
 		color:#488AC7 ;
 	}
 	header .logo{
-		margin-top: 20px;
+		margin-top: 4vh;
 		/*margin-left: 35px;*/
-		padding-left: 20px;
+		padding-left: 5vh;
 		margin-bottom: 0px;
-		position: relative;
+		/* position: relative; */
 		/*top: 30px;*/
 	}
 	header .Sign{
-		margin-top: 20px;
+		margin-top: 4vh;
 		display: flex;
-		flex-direction: column;
-		width: 50vw;
+		flex-direction: row;
+		width: 30vw;
 		/* padding: 5px; */
+		/* margin-right: 6vw; */
 
 
 	}
 	header .Sign button{
 		margin-right: 1vw;
+		/* width: 30vw; */
+	}
+
+	header .nav a:hover{
+		border: none;
+		background-color:inherit;
+		border:1px solid #0ac4e031;
+		height: 3vh;
+		color: #fff;
 	}
 	/* #Us{
 		display: none;
@@ -720,7 +759,7 @@ footer li a:hover{
 	}
 	#Welcome .note{
 		position: relative;
-		/*top: 250px;*/margin-top: 45px;
+		/*top: 250px;*/margin-top: 10vh;
 	}
 
 
@@ -743,8 +782,13 @@ footer li a:hover{
 		grid-template-columns: 1fr;
 		grid-auto-rows: 35%;
 		font-size: 16px;
-		width:90w;
+		width:100vw;
 		margin: 0px;
+	}
+
+	#imagespro button{
+		width: 60%;
+		margin-left: 20vw;
 	}
 	/* hr{
 		display: flex;
@@ -754,9 +798,11 @@ footer li a:hover{
 	#Contact{
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 10vh;
 	}
 	#serv{
-		display: block;
+		display: flex;
+		flex-direction: column;
 		align-content: center;
 	}
 	#services{
@@ -766,6 +812,10 @@ footer li a:hover{
 		/*width: 50%;*/
 		width: 100vw;
 
+	}
+	.library button{
+		display: block;
+		/* flex-direction: ro; */
 	}
 	#services button{
 		width: 15%;
@@ -782,14 +832,14 @@ footer li a:hover{
 		transition: 0.25s;
 		display: flex;
 		flex-direction: column;
-		width: 100vw;
+		width: 100%;
 		margin-top: 10vh;
 		margin-bottom: 10vh;
 
 	}
 
 	#Us .container{
-		padding: 30px;
+		padding: 2px;
 	}
 
 	#Us .skills{
@@ -797,7 +847,8 @@ footer li a:hover{
 		display: flex;
 		/*flex-direction: column;*/
 		justify-content: space-between;
-		/*padding: 5px;*/
+		/* padding: 5px; */
+		position: relative;
 
 	}
 	#Us .skills a button{
@@ -854,25 +905,32 @@ footer li a:hover{
 		height: 50%;
 	}
 	#services .library{
-		margin-bottom: 70px;
+		margin-bottom: 10vh;
+		display: block;
+		
 	}
 	#services .library button{
 		/*display: grid;*/
+		display: block;
+		/* flex-direction: row; */
 		width: 100%;
-		height: 80%;
+		height: 10vh;
 		padding: 0px;
 		margin-right: 0px;
 		margin-left: 0px;
 		align-content: center;
+		background-color: rgba(22, 67, 93, 0.993);
+		color: white;
 	}
 	#services .library p{
-		display: none;
+		text-align: center;
+		/* text-align: justify; */
 	}
 }
 @media (max-width: 480px)
 {
 	body{
-		overflow-x: hidden;
+		/* overflow-x: hidden; */
 	}
 }
 @keyframes slide-up{
