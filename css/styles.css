@@ -859,6 +859,7 @@ footer li a:hover{
 	}
 
 
+
 }
 @media (max-width: 952px){
 	body{transition: 0.25s;
@@ -926,6 +927,12 @@ footer li a:hover{
 		text-align: center;
 		/* text-align: justify; */
 	}
+
+footer{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-auto-columns:2%;
+}
 }
 @media (max-width: 480px)
 {

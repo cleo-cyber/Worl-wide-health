@@ -1,5 +1,6 @@
 <?php
 include 'connect.php';
+
 if (isset($_POST['submit'])) {
 	$name=$_POST['name'];
 	$email=$_POST['Email'];
@@ -7,7 +8,8 @@ if (isset($_POST['submit'])) {
 	$phone=$_POST['Mobile'];
 	$pass=$_POST['Password'];
 
-	$sql= "INSERT INTO `adoctor`(d_name, d_email, department, mobile,d_password)
+
+	$sql="INSERT INTO `adoctor`(d_name, d_email, department, mobile,d_password)
 	VALUES('$name','$email','$department','$phone','$pass')";
 
 	$result=mysqli_query($conn,$sql);
@@ -17,6 +19,8 @@ if (isset($_POST['submit'])) {
 	else{
 		header("location:display.php");
 	}
+
+  
 	
 }
 ?>

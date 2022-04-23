@@ -9,6 +9,54 @@ if (!$conn) {
 	die("connection failed".mysqli_connect_error());
 }
 
+$name=$email=$department=$phone=$pass=$emailError="";
+
+$passError=$nameErr=$deptError="";
+function test($data){
+    $data=trim($data);
+    $data=stripslashes($data);
+    $data=htmlspecialchars($data);
+    return $data;
+}
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+    if(empty($name))
+    {
+        $nameErr="Name field required";
+    }
+    else{
+        $name=test($_POST["name"]);
+    }
+
+    if(empty($email))
+    {
+        $emailError="field required";
+    }
+    else{
+        $email=test($_POST["Email"]);
+    }
+    
+    if(empty($department))
+    {
+        $deptError=" field required";
+    }
+    else{
+        $email=test($_POST["Email"]);
+    }
+
+    $department=test($_POST["Department"]);
+    $phone=test($_POST["Mobile"]);
+    $pass=test($_POST["Password"]);
+
+    if($pass<8){
+        $passError="Password too short";
+    }
+    
+}
+
+
+
 if (isset($_POST['submit'])) {
 	$name=$_POST['name'];
 	$email=$_POST['Email'];
