@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $dbserver="localhost";
 $dbuser="root";
 $password="";
@@ -9,21 +9,25 @@ $conn=mysqli_connect($dbserver,$dbuser,$password,$dbname);
 if (!$conn) {
 	die("connection failed".mysqli_connect_error());
 }
-if(isset($_POST["submit"])){
+if(isset($_POST['submit'])){
     $email=$_POST["email"];
     $pass=$_POST["Password"];
 
-    $sql="SELECT email,P_assword FROM `adlogib` where P_assword='$pass' AND email='$email'";
-    $result=mysqli_query($conn,$sql);
-    if($result){
-        header("location:admin.html");
-    }
-    else{
-        die("connection failed".mysqli_connect_error());
-    }
+
+ $sql="SELECT * FROM `adlogib` WHERE email='".$email."' AND P_assword='".$pass."' limit 1 ";
+
+ $result=mysqli_query($conn,$sql);
+$row=mysqli_fetch_assoc($result);
+
+if($row["email"]==$email && $row["P_assword"]==$pass){
+    $_SESSION['email']=$_POST["email"];
+    $_SESSION['success']="You have logged in";
+
+    echo "<script>setTimeout(()=>{alert('Welcome!'),500);</script>}";
+    echo "<script>window.setTimeout(function() {window.location.href='admin.html';}1000);</script>";
+
 }
-
-
+}
 ?>
 
 <!DOCTYPE html>
@@ -85,8 +89,8 @@ form input[type="checkbox"]{
     
 }
 form p{
-    margin-top: 3vh;
-    margin-left: 4.8vw;
+    margin-top: 1vh;
+    margin-left:1vw;
 }
 form input[type="submit"]{
     width: 25vw;
@@ -112,7 +116,7 @@ form input:focus{
 }
 form h2{
     font-weight: 600;
-    margin-left: 5vh;
+    margin-left: 0vh;
 }
 form a{
     display: block;

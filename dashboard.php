@@ -1,3 +1,9 @@
+<?php
+
+include 'connect.php'
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +14,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
 </head>
+
+<style>
+    article{
+        position: absolute;
+       margin-left: 30vw;
+       margin-top: 8vh;
+
+
+    }
+
+    article .display{
+        background-color: #f4f4f4;
+        height: 15vh;
+        width: 15vw;
+       
+    }
+    article h2{
+        text-align: right;
+        
+    }
+</style>
 <body>
     <aside>
         
@@ -96,7 +123,18 @@
 
   
 
-  
+    <article id="dashboard">
+
+    <!-- display number of doctors -->
+    <div class="display">
+    <?php
+    
+    echo mysqli_num_rows($result);
+    
+    ?>
+   
+       <!-- <h2> <i class="fa fa-user" aria-hidden="true">Total doctors</i></h2>  -->
+    </article>
 
 </body>
 </html>

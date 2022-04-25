@@ -9,6 +9,11 @@ if (!$conn) {
 	die("connection failed".mysqli_connect_error());
 }
 
+$sql="SELECT * FROM `adoctor`";
+
+$result=mysqli_query($conn,$sql);
+
+
 $name=$email=$department=$phone=$pass=$emailError="";
 
 $passError=$nameErr=$deptError="";
@@ -18,7 +23,7 @@ function test($data){
     $data=htmlspecialchars($data);
     return $data;
 }
-
+//form validation for adding doctors
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     if(empty($name))
@@ -56,7 +61,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 }
 
 
-
+//Posting data from add doctor to the database
 if (isset($_POST['submit'])) {
 	$name=$_POST['name'];
 	$email=$_POST['Email'];
