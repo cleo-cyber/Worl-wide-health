@@ -11,9 +11,13 @@ include 'connect.php';
 	<link rel="stylesheet" href="admin.css">
 	<title>Display</title>
 	<style type="text/css">
+
+
 		html{
 			scroll-behavior: smooth;
 		}
+
+	
 		article{
 			position: absolute;
 			margin-left: 25vw;
@@ -24,7 +28,7 @@ include 'connect.php';
 			margin-top: 5vh;
 			margin-bottom: 5vh;
 			margin-left: 5vw;
-			width: 10vw;
+			/* width: 10vw; */
 			height: 5vh;
 			background-color: #1F51FF;
 			border-radius: 5px;
@@ -36,13 +40,13 @@ include 'connect.php';
 		}
 		table{
 			box-shadow: 0 0 0 3px #f4f4f4;
-			margin: 1vh;
-			width: 72vw;
+			/* margin: 1vh; */
+			width: 100%;
 			/* margin-right:5vw; */
 			/* margin-left: 5vw; */
 			margin-top: 5vh;
 			margin-bottom: 5vh;
-			border-collapse: collapse;
+			/* border-collapse: collapse;/ */
 			/* background-color: #f4f4f4; */
 
 
@@ -51,19 +55,21 @@ include 'connect.php';
 
 		table thead tr{
 			font-size: 20px;
-			width: 100%;
-			border: 1px solid #f4f4f4;
+			/* width: 100%; */
+			
+
+			
 
 		}
 		table thead tr th{
-			/* padding-right: 5vw; */
+			padding-right: 2vw;
 			color: #333;
-			/*border: 1px solid #f4f4f4;*/
+			border: 1px solid #f4f4f4;
 			height: 5vh;
-			border-collapse: collapse;
+			/* border-collapse: collapse; */
 			/* text-align: center; */
 		}
-		@media screen and (max-width:760px) {
+		/* @media screen and (max-width:760px) {
 			aside{
 				display: none;
 			}
@@ -74,7 +80,7 @@ include 'connect.php';
 				
 			}
 			
-		}
+		} */
 	</style>
 </head>
 <body>
@@ -89,7 +95,7 @@ include 'connect.php';
 
              
             <li>
-                <a href="dashboard.html">
+                <a href="dashboard.php">
                     <span>Dashboard</span>
                 </a>
             </li>
@@ -102,7 +108,7 @@ include 'connect.php';
                 <ul class="submenu">
                     <li><a href="display.php">All Doctors</a></li>
                     <li><a href="adddoc.php">Add Doctor</a></li>
-                    <li><a href="password.html">Edit Doctor</a></li>
+                    <li><a href="editdoc.php">Edit Doctor</a></li>
                 </ul>
             </li>
 
@@ -151,7 +157,7 @@ include 'connect.php';
                         <li><a href="viewapp.html">Doctor's Schedule</a></li>
                     </ul>
                 </li> -->
-                <a href="index.html">
+                <a href="logout.php?logout">
                     <i class='bx bx-log-out'></i>
                     <span>Log Out</span>
                 </a>
@@ -164,7 +170,7 @@ include 'connect.php';
 
             </aside>
 
-  
+
 
   
 	<article>
@@ -198,12 +204,12 @@ include 'connect.php';
 					
 					echo '<tr>
 				<th scope="row" style="position:relative; display:flex;flex-direction:column">'.$id.'</th>
-				<td>'.$name.'</td>
-				<td>'.$email.'</td>
-				<td>'.$dept.'</td>
-				<td>'.$password.'</td>
-				<td>'.$mobile.'</td>
-				<td style="display: flex;"><button style="width: 30%; height:5vh;"><a style="color: #fff;" href="update.php? updateid='.$id.'">Update</a></button>
+				<td style="border-left: 2px solid #f4f4f4";>'.$name.'</td>
+				<td style="border-left: 2px solid #f4f4f4";>'.$email.'</td>
+				<td style="border-left: 2px solid #f4f4f4";>'.$dept.'</td>
+				<td style="border-left: 2px solid #f4f4f4";>'.$password.'</td>
+				<td style="border-left: 2px solid #f4f4f4";>'.$mobile.'</td>
+				<td style="display: flex;"><button style="width: 30%; height:5vh; "><a style="color: #fff;" href="update.php? updateid='.$id.'">Update</a></button>
 			<button style="width: 30%;height:5vh;position:relative;right:4.5vw;background:red;"><a style="color: #fff;" href="delete.php?deleteid='.$id.'">Delete</a></button>
 		</td>
 	</tr>';
@@ -216,5 +222,6 @@ include 'connect.php';
 		</tbody>
 	</table>
 	</article>
+
 </body>
 </html>

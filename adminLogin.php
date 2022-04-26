@@ -1,33 +1,5 @@
 <?php
-session_start();
-$dbserver="localhost";
-$dbuser="root";
-$password="";
-$dbname="hospitalsystem";
-
-$conn=mysqli_connect($dbserver,$dbuser,$password,$dbname);
-if (!$conn) {
-	die("connection failed".mysqli_connect_error());
-}
-if(isset($_POST['submit'])){
-    $email=$_POST["email"];
-    $pass=$_POST["Password"];
-
-
- $sql="SELECT * FROM `adlogib` WHERE email='".$email."' AND P_assword='".$pass."' limit 1 ";
-
- $result=mysqli_query($conn,$sql);
-$row=mysqli_fetch_assoc($result);
-
-if($row["email"]==$email && $row["P_assword"]==$pass){
-    $_SESSION['email']=$_POST["email"];
-    $_SESSION['success']="You have logged in";
-
-    echo "<script>setTimeout(()=>{alert('Welcome!'),500);</script>}";
-    echo "<script>window.setTimeout(function() {window.location.href='admin.html';}1000);</script>";
-
-}
-}
+include 'connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -155,7 +127,7 @@ marquee{
         
         
         <div class="user_input">
-        <form method="POST">
+        <form action="process.php" method="POST" >
         <h2>Welcome Back !</h2>
         <p>Sign in to continue</p>
        
@@ -163,11 +135,11 @@ marquee{
        <input type="email" name="email" placeholder="Enter email">
        
        <label for="">Password</label>
-    <input type="text" name="Password" placeholder="Enter Password" >
+    <input type="password" name="Password" placeholder="Enter Password" >
     <a href="#" class="forgot">Forgot password?</a>
     <br>   
     <input type="checkbox" name="check" value="Remember me">Remember me
-    <input type="submit" value="login">
+    <input type="submit" value="login" name="login">
     </div>
     
     </form>

@@ -104,7 +104,7 @@ if (isset($_POST['submit'])) {
 
              
             <li>
-                <a href="dashboard.html">
+                <a href="dashboard.php">
                     <span>Dashboard</span>
                 </a>
             </li>
@@ -117,7 +117,7 @@ if (isset($_POST['submit'])) {
                 <ul class="submenu">
                     <li><a href="display.php">All Doctors</a></li>
                     <li><a href="adddoc.php">Add Doctor</a></li>
-                    <li><a href="password.html">Edit Doctor</a></li>
+                    <li><a href="editdoc.php">Edit Doctor</a></li>
                 </ul>
             </li>
 
@@ -166,7 +166,7 @@ if (isset($_POST['submit'])) {
                         <li><a href="viewapp.html">Doctor's Schedule</a></li>
                     </ul>
                 </li> -->
-                <a href="index.html">
+                <a href="logout.php?logout">
                     <i class='bx bx-log-out'></i>
                     <span>Log Out</span>
                 </a>

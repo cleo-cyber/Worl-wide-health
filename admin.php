@@ -1,7 +1,11 @@
 <?php
-
-include 'connect.php'
-
+session_start();
+if(isset($_SESSION['email'])){
+    echo "<script>alert('Welcome');</script>";
+}
+else{
+    header("location:adminLogin.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,27 +18,6 @@ include 'connect.php'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
 </head>
-
-<style>
-    article{
-        position: absolute;
-       margin-left: 30vw;
-       margin-top: 8vh;
-
-
-    }
-
-    article .display{
-        background-color: #f4f4f4;
-        height: 15vh;
-        width: 15vw;
-       
-    }
-    article h2{
-        text-align: right;
-        
-    }
-</style>
 <body>
     <aside>
         
@@ -110,7 +93,7 @@ include 'connect.php'
                 </li> -->
                 <a href="logout.php?logout">
                     <i class='bx bx-log-out'></i>
-                    <span>Log Out</span>
+                    <span >Log Out</span>
                 </a>
             </li>
 
@@ -123,18 +106,7 @@ include 'connect.php'
 
   
 
-    <article id="dashboard">
-
-    <!-- display number of doctors -->
-    <div class="display">
-    <?php
-    
-    echo mysqli_num_rows($result);
-    
-    ?>
-   
-       <h2> <box-icon type='solid' name='user' ><i class='bx bxs-user'></i><br> Total doctors</i></h2> 
-    </article>
+  
 
 </body>
 </html>
