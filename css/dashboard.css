@@ -3,7 +3,7 @@
    margin-left: 25vw;
    margin-top: 8vh;
    display: grid;
-     grid-template-columns: repeat(4,1fr);
+     grid-template-columns: repeat(3,1fr);
     grid-gap: 3vw;
 
  
@@ -16,7 +16,7 @@
     color: #000;
     font-weight: 500;
     height: auto;
-    width: 18vw;
+    width: 20vw;
     border-radius: 5px;
     box-shadow: 0 0 7px #000;
     display: flex;
@@ -25,7 +25,9 @@
    
 
 }
-
+.display .bottom{
+    margin-top: 5vh;
+}
 
 .display h2{
     position: relative;
@@ -41,3 +43,4 @@ i{
     margin-left:2vw;
     
 }
+

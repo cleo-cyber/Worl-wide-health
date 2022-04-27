@@ -10,6 +10,7 @@ if(isset($_POST["login"])){
         header("location: adminLogin.php?Empty= Please fill in the blanks");
 
     }else{
+        
         $sql="SELECT * FROM adlogib where email='".$_POST["email"]."' AND P_assword='".$_POST["Password"]."'";
         $result=mysqli_query($conn,$sql);
         if(mysqli_fetch_assoc($result)){
@@ -22,9 +23,9 @@ if(isset($_POST["login"])){
     }
 
 
-    function test($data){
-        $data=trim($data);
-        $data=stripslashes($data);
-        $data=htmlspecialchars($data);
-    }
+    // function test($data){
+    //     $data=trim($data);
+    //     $data=stripslashes($data);
+    //     $data=htmlspecialchars($data);
+    // }
 }?>

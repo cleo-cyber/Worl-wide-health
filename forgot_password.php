@@ -1,5 +1,23 @@
 <?php
 include 'connect.php';
+include 'process.php';
+
+if(isset($_POST['forgot_password'])){
+    $email=$_POST['email'];
+   if(empty($email)){
+    header("location: adminLogin.php?Empty= Invalid entry");
+   }
+   else{
+       $sql="SELECT * FROM adlogib where email='$email LIMIT 1'";
+       $result=mysqli_query($conn,$sql);
+       $user=mysqli_fetch_assoc($result);
+       $token=$user['token'];
+       sendPasswordResetLink($email,$token);
+       header("location:reset.php");
+
+   }
+    
+}
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +26,7 @@ include 'connect.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>forgot password</title>
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
@@ -127,18 +145,12 @@ marquee{
         
         
         <div class="user_input">
-        <form action="process.php" method="POST" >
-        <h2>Welcome Back !</h2>
-        <p>Sign in to continue</p>
-       
+        <form action="forgot_password.php" method="POST" >
         <label for="">Email</label>
        <input type="email" name="email" placeholder="Enter email">
-       
-       <label for="">Password</label>
-    <input type="password" name="Password" placeholder="Enter Password" >
-    <a href="forgot_password.php" class="forgot">Forgot password?</a>
+    <!-- <a href="forgot_password.php" class="forgot">Forgot password?</a> -->
     
-    <input type="submit" value="login" name="login">
+    <input type="submit" value="recover password" name="forgot_password">
     </div>
     
     </form>

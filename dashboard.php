@@ -12,7 +12,26 @@ include 'connect.php'
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="./css/dashboard.css">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #dashboard{
+    position: absolute;
+   margin-left: 25vw;
+   margin-top: 8vh;
+   display: grid;
+     grid-template-columns: repeat(3,1fr);
+    grid-gap: 3vw;
+
+}
+.display{
+    margin-bottom: 10vh;
+    margin-left: 2vw;
+    margin-right: 0;
+
+}
+
+    </style>
     <title>Admin Panel</title>
 </head>
 
@@ -132,7 +151,8 @@ include 'connect.php'
     echo mysqli_num_rows($q);
     ?>
 </div>
-<div class="display">
+
+<div class="display bottom">
     <h2>Prescription</h2>
     <?php
     $sql="SELECT * FROM prescription";
@@ -141,11 +161,24 @@ include 'connect.php'
     ?>
 </div>
 
+<div class="display bottom">
+    <h2>medicine</h2>
+    <?php
+    $sql="SELECT * FROM prescription";
+    $q=mysqli_query($conn,$sql);
+    echo mysqli_num_rows($q);
+    ?>
+</div>
+<div class="display bottom">
+    <h2>Total billing</h2>
+    <?php
+    $sql="SELECT * FROM prescription";
+    $q=mysqli_query($conn,$sql);
+    echo mysqli_num_rows($q);
+    ?>
+</div>
     </article>
 
-    <article id="transaction"> 
-
-    </article>
 
 </body>
 </html>
