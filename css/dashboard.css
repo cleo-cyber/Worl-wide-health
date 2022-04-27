@@ -1,0 +1,37 @@
+article{
+    position: absolute;
+   margin-left: 30vw;
+   margin-top: 8vh;
+
+
+ 
+
+}
+
+.display{
+    background-color: #02315a;
+    color: aliceblue;
+    font-weight: 500;
+    height: auto;
+    width: 18vw;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #000;
+   
+
+}
+
+
+.display h2{
+    position: relative;
+    top: 2vh;
+    margin-left: 1vh;
+    height: 10vh;
+    
+
+    
+}
+
+i{
+    margin-left:2vw;
+    
+}

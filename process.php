@@ -14,7 +14,7 @@ if(isset($_POST["login"])){
         $result=mysqli_query($conn,$sql);
         if(mysqli_fetch_assoc($result)){
             $_SESSION['email']=$_POST["email"];
-            header("location:admin.php");
+            header("location:dashboard.php");
         }
         else{
             header("location:adminLogin.php?Invalid=Please enter correct email and password");

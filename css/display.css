@@ -1,0 +1,50 @@
+article{
+			position: absolute;
+			margin-left: 25vw;
+            /* width: 100%; */
+            overflow-x: hidden;
+		
+		}
+        .add{
+          
+           display: flex;
+           flex-direction:row-reverse;
+           height: 8vh;
+           width: 78.7vw;
+        }
+        button{
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            padding: 7px;
+            border-radius: 5px;
+            position: relative;
+            right: 10vw;
+            /* width: 100%; */
+            margin-right: 2vh;
+            color: aliceblue;
+
+            
+        }
+        button:hover{
+            transition: 0.25s;
+            transform: scale(0.9);
+        }
+
+		table{
+			width: 78.7vw;
+			height: auto;
+            /* margin-left: 5px; */
+            border-collapse: collapse;
+            outline: none;
+            text-align: center;
+            box-shadow: 0  0 10px #f4f4f4;
+            margin-top: 3vh;
+            /* margin-right: 10vw; */
+            
+
+			
+		}
+
+       th,td{
+        padding: 10px 15px;
+       }

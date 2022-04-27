@@ -11,30 +11,11 @@ include 'connect.php'
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
 </head>
 
-<style>
-    article{
-        position: absolute;
-       margin-left: 30vw;
-       margin-top: 8vh;
-
-
-    }
-
-    article .display{
-        background-color: #f4f4f4;
-        height: 15vh;
-        width: 15vw;
-       
-    }
-    article h2{
-        text-align: right;
-        
-    }
-</style>
 <body>
     <aside>
         
@@ -127,13 +108,16 @@ include 'connect.php'
 
     <!-- display number of doctors -->
     <div class="display">
+    <h2> <box-icon type='solid' name='user' >Total doctors<i class='bx bxs-user'></i> </i></h2> 
     <?php
     
     echo mysqli_num_rows($result);
     
     ?>
    
-       <h2> <box-icon type='solid' name='user' ><i class='bx bxs-user'></i><br> Total doctors</i></h2> 
+    <!-- <div class="display2">
+        <h2>Total patients</h2>
+    </div> -->
     </article>
 
 </body>
