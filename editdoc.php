@@ -1,16 +1,7 @@
 <?php
-
+include 'connect.php'
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Doctor</title>
-</head>
-<body>
 <!doctype html>
 <html lang="en">
   <head>
@@ -20,6 +11,7 @@
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
    <link rel="stylesheet" href="admin.css">
+   <link rel="stylesheet" href="./css/display.css">
    <style type="text/css">
     	
     	form{
@@ -76,7 +68,7 @@
 }
 
     </style>
-    <title>Add doctor</title>
+    <title>edit doctor</title>
   </head>
   <body>
    <div class="container">
@@ -168,32 +160,66 @@
   
 
   
+            <article>
+	<div class="add">
+       
+    <a href="adddoc.php"><button style="background-color: #02315a;">Add doctor</button></a>
+        
+	</div>
+<table>
+	<tr>
+		<th>#</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Department</th>
+		<th>Mobile</th>
+        <th>location</th>
+        <th>Charges</th>
+        <th>Status</th>
+        <th>experience</th>
+        <th>DOB</th>
+        <th>Password</th>
+		<th >Operation</th>
+	</tr>
+	<tr>
+		<?php
+		$sql="SELECT * FROM `adoctor`";
 
-   	<form method="post" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>">
- 	 <div class="form-group">
-		<label  class="form-label">Full Name</label>
-		<input type="text" class="form-control" placeholder="Enter Name" name="name" autocomplete="off">
-	</div>
-	<div class="form-group">
-		<label  class="form-label">Email</label>
-		<input type="email" class="form-control" placeholder="Enter Email" name="Email" autocomplete="off">
-	</div>
-	<div class="form-group">
-		<label  class="form-label">Department</label>
-		<input type="text" class="form-control" placeholder="Enter Department" name="Department" autocomplete="off">
-	</div>
-	<div class="form-group">
-		<label  class="form-label">Mobile number</label>
-		<input type="text" class="form-control" placeholder="Enter phone number" name="Mobile" autocomplete="off">
-	</div>
+		$result=mysqli_query($conn,$sql);
+		while($row=mysqli_fetch_assoc($result)){
+			$id=$row['doctor_id'];
+			$name=$row['d_name'];
+			$email=$row['d_email'];
+			$department=$row['department'];
+			$mobile=$row['mobile'];
+            $charge=$row['consultancy_charge'];
+            $location=$row['l_ocation'];
+            $experience=$row['experience'];
+            $status=$row['s_tatus'];
+            $dob=$row['dob'];
+			$pass=$row['d_password'];
 
-	<div class="form-group">
-		<label  class="form-label">Password</label>
-		<input type="text" class="form-control" placeholder="Enter password" name="Password" autocomplete="off">
-	</div>
- 
-  <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-</form>
-   </div>
+
+            echo "<tr>";
+            echo "<td>";  echo $id; echo "</td>";
+            echo "<td>";  echo $name; echo "</td>";
+            echo "<td>"; echo $email; echo "</td>";
+            echo "<td>"; echo $department;echo  "</td>";
+            echo "<td>"; echo $mobile; echo "</td>";
+            echo "<td>";echo $location;echo "</td>";
+            echo "<td>";echo $charge;echo "</td>";
+            echo "<td>";echo $status;echo "</td>";
+            echo "<td>";echo $experience;echo "</td>";
+            echo "<td>";echo $dob;echo "</td>";
+            echo "<td>";echo $pass;echo "</td>";
+            echo "<td>";echo'<a href="update.php?updateid='.$id.'"><button style="background-color: #02313a; margin-left:10vw">Update</button></a>';echo "</td>";
+            echo "</tr>";
+        }
+		
+		?>
+		
+</table>
+
+</article>
 </body>
 </html>

@@ -137,8 +137,7 @@ marquee{
        <label for="">Password</label>
     <input type="password" name="Password" placeholder="Enter Password" >
     <a href="#" class="forgot">Forgot password?</a>
-    <br>   
-    <input type="checkbox" name="check" value="Remember me">Remember me
+    
     <input type="submit" value="login" name="login">
     </div>
     

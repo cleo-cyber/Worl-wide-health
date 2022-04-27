@@ -122,7 +122,7 @@ $row2=mysqli_fetch_assoc($result2);
                 <ul class="submenu">
                     <li><a href="display.php">All Doctors</a></li>
                     <li><a href="adddoc.php">Add Doctor</a></li>
-                    <li><a href="password.html">Edit Doctor</a></li>
+                    <li><a href="editdoc.php">Edit Doctor</a></li>
                 </ul>
             </li>
 
@@ -196,6 +196,10 @@ $row2=mysqli_fetch_assoc($result2);
 		<label  class="form-label">Full Name</label>
 		<input type="text" class="form-control" placeholder="<?php echo $row2['d_name'];?>" name="name" autocomplete="off">
 	</div>
+    <div class="form-group">
+		<label  class="form-label">Date of birth</label>
+		<input type="date" class="form-control" placeholder="enter date of birth" name="dob" autocomplete="off">
+	</div>
 	<div class="form-group">
 		<label  class="form-label">Email</label>
 		<input type="email" class="form-control" placeholder="<?php echo $row2['d_email'];?>" name="Email" autocomplete="off">
@@ -216,7 +220,26 @@ $row2=mysqli_fetch_assoc($result2);
         echo $row2['d_password'];
         ?>" name="Password" autocomplete="off">
 	</div>
- 
+    <div class="form-group">
+		<label  class="form-label">location</label>
+		<input type="text" class="form-control" placeholder="<?php
+        echo $row2['l_ocation']?>" name="location" autocomplete="off">
+	</div>
+    <div class="form-group">
+		<label  class="form-label">Experience</label>
+		<input type="number" class="form-control" placeholder="<?php
+        echo $row2['experience']?>" name="experience" autocomplete="off">
+	</div>
+    <div class="form-group">
+		<label  class="form-label">Consultancy Charge</label>
+		<input type="number" class="form-control" placeholder="Charges" name="<?php
+        echo $row['consultancy_charge'];?>" autocomplete="off">
+	</div>
+    <div class="form-group">
+		<label  class="form-label">Status</label>
+		<input type="text" class="form-control" placeholder="<?php
+        echo $row2['s_tatus']?>" name="Status" autocomplete="off">
+	</div>
   <button type="submit" class="btn btn-primary" name="submit">Update</button>
 </form>
    </div>

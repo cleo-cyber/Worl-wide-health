@@ -80,17 +80,14 @@ else{
                     <li><a href="viewapp.html">Help Center</a></li>
                 </ul>
             </li>
+            
             <li>
-            <!-- <li>
-                    <a href="">
-                        <span>Pharmacy</span>
-                        <i class='bx bx-chevron-right' ></i>
-                    </a>
-                    <ul class="submenu">
-                        <li><a href="book.html">Book Appointment</a></li>
-                        <li><a href="viewapp.html">Doctor's Schedule</a></li>
-                    </ul>
-                </li> -->
+                <a href="billing.php">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>Billing</span>
+                </a>
+            </li>
+            <li>
                 <a href="logout.php?logout">
                     <i class='bx bx-log-out'></i>
                     <span >Log Out</span>

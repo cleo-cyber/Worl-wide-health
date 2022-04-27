@@ -45,8 +45,8 @@ include 'connect.php';
                     <i class='bx bx-chevron-right' ></i>
                 </a>
                 <ul class="submenu">
-                    <li><a href="department.html">All Patients</a></li>
-                    <li><a href="department.html">Add Patient</a></li>
+                    <li><a href="patient.php">All Patients</a></li>
+                    <!-- <li><a href="department.html">Add Patient</a></li> -->
                     <li><a href="department.html">Edit Patient</a></li>
                 </ul>
             </li>
@@ -119,8 +119,13 @@ include 'connect.php';
 		<th>Email</th>
 		<th>Department</th>
 		<th>Mobile</th>
-		<th>Password</th>
-		<th>Operation</th>
+        <th>location</th>
+        <th>Charges</th>
+        <th>Status</th>
+        <th>experience</th>
+        <th>DOB</th>
+        <th>Password</th>
+		<th >Operation</th>
 	</tr>
 	<tr>
 		<?php
@@ -133,6 +138,11 @@ include 'connect.php';
 			$email=$row['d_email'];
 			$department=$row['department'];
 			$mobile=$row['mobile'];
+            $charge=$row['consultancy_charge'];
+            $location=$row['l_ocation'];
+            $experience=$row['experience'];
+            $status=$row['s_tatus'];
+            $dob=$row['dob'];
 			$pass=$row['d_password'];
 
 
@@ -142,9 +152,13 @@ include 'connect.php';
             echo "<td>"; echo $email; echo "</td>";
             echo "<td>"; echo $department;echo  "</td>";
             echo "<td>"; echo $mobile; echo "</td>";
+            echo "<td>";echo $location;echo "</td>";
+            echo "<td>";echo $charge;echo "</td>";
+            echo "<td>";echo $status;echo "</td>";
+            echo "<td>";echo $experience;echo "</td>";
+            echo "<td>";echo $dob;echo "</td>";
             echo "<td>";echo $pass;echo "</td>";
-            echo "<td>";echo $pass;echo "</td>";
-            echo "<td>";echo'<a href="delete.php?deleteid='.$id.'"><button style="background-color: #02313a;">Delete</button></a>';echo "</td>";
+            echo "<td>";echo'<a href="delete.php?deleteid='.$id.'"><button style="background-color: #02313a; margin-left:10vw">Delete</button></a>';echo "</td>";
             echo "</tr>";
         }
 		

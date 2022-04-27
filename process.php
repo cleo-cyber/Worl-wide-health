@@ -5,7 +5,7 @@ include 'connect.php';
 if(isset($_POST["login"])){
 
 
-    if(empty($_POST["email"]) || empty($_POST["Password"])){
+    if(empty(test($_POST["email"])) || test(empty($_POST["Password"]))){
 
         header("location: adminLogin.php?Empty= Please fill in the blanks");
 
@@ -21,6 +21,10 @@ if(isset($_POST["login"])){
         }
     }
 
-}
 
-?>
+    function test($data){
+        $data=trim($data);
+        $data=stripslashes($data);
+        $data=htmlspecialchars($data);
+    }
+}?>

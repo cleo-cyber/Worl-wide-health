@@ -105,7 +105,7 @@ include 'connect.php'
   
 
     <article id="dashboard">
-
+    
     <!-- display number of doctors -->
     <div class="display">
     <h2> <box-icon type='solid' name='user' >Total doctors<i class='bx bxs-user'></i> </i></h2> 
@@ -114,10 +114,37 @@ include 'connect.php'
     echo mysqli_num_rows($result);
     
     ?>
-   
-    <!-- <div class="display2">
-        <h2>Total patients</h2>
-    </div> -->
+    </div>
+<div class="display">
+    <h2>Total Patients</h2>
+    <?php
+    $sql="SELECT * FROM patients";
+    $q=mysqli_query($conn,$sql);
+    echo mysqli_num_rows($q);
+    ?>
+</div>
+
+<div class="display">
+    <h2>Appointments</h2>
+    <?php
+    $sql="SELECT * FROM appointments";
+    $q=mysqli_query($conn,$sql);
+    echo mysqli_num_rows($q);
+    ?>
+</div>
+<div class="display">
+    <h2>Prescription</h2>
+    <?php
+    $sql="SELECT * FROM prescription";
+    $q=mysqli_query($conn,$sql);
+    echo mysqli_num_rows($q);
+    ?>
+</div>
+
+    </article>
+
+    <article id="transaction"> 
+
     </article>
 
 </body>
